@@ -3,7 +3,7 @@ clc, clear
 input = imread('input.jpg');
 
 
-img_resized_rgb = imresize(input,[80 80]);
+img_resized_rgb = imresize(input,[50 50]);
 
 img_resized_gray = im2gray(img_resized_rgb);
 
