@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.9418184324912597 0.3271780442197254 0.07702316275161668 0.3911842502099102
-  position 2.681066488443278 7.611811217787503 16.3597408196093
+  orientation 0.0012391731742654273 0.9859483821744742 0.16704565884027361 3.1197597902588257
+  position 1.1993697530078908 5.007521467715956 -12.091689306517473
 }
 TexturedBackground {
 }
@@ -12,4 +12,28 @@ TexturedBackgroundLight {
 }
 RectangleArena {
   floorSize 15 4
+}
+Solid {
+  translation 0.12645800000010518 0.12460759860277944 -0.13000007907497457
+  rotation -0.999987761506976 0.0049473891450212085 1.3300934875055673e-05 1.0866761677733556e-06
+  scale 2.5 2.5 2.5
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.5 0.5 0.5
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+  }
+  linearVelocity -1.2695186151693846e-12 1.0943472375398806e-08 1.0599118775891506e-06
+  angularVelocity 8.47912961209079e-06 2.0748059331960485e-16 1.0154010965363186e-11
 }
