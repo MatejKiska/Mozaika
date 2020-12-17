@@ -5,6 +5,6 @@ sceneTreePerspectives: 000000ff0000000100000002000000c00000000001000000020100000
 maximizedDockId: -1
 centralWidgetVisible: 1
 orthographicViewHeight: 1
-textFiles: 0 "controllers/car1_controller/car1_controller.m"
+textFiles: 9 "controllers/car1_controller/car1_controller.m" "controllers/car2_controller/car2_controller.m" "controllers/car3_controller/car3_controller.m" "controllers/car4_controller/car4_controller.m" "controllers/car5_controller/car5_controller.m" "controllers/car6_controller/car6_controller.m" "controllers/car7_controller/car7_controller.m" "controllers/car8_controller/car8_controller.m" "controllers/car9_controller/car9_controller.m" "controllers/car10_controller/car10_controller.m"
 globalOptionalRendering: DistanceSensorRays
 consoles: Console:All:All
