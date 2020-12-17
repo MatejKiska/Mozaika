@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.8738471271239553 0.44043298741370024 0.2059368398685711 0.7755969521972826
-  position 3.4161966162664603 5.504052234844208 5.012286760777083
+  orientation -0.30866188296442404 0.888932429832263 0.3384183464254932 1.6735391301014582
+  position 4.29346994522415 2.015887678820789 -2.3408289891112073
 }
 TexturedBackground {
 }
@@ -25,7 +25,7 @@ ConveyorBelt {
   size 2 0.06 0.1
   borderThickness 0.01
   borderHeight -0.01
-  speed 0.01
+  speed 0.1
 }
 ConveyorBelt {
   translation 1.17 0.04 -2.36
@@ -34,7 +34,7 @@ ConveyorBelt {
   size 2 0.05 0.1
   borderThickness 0.01
   borderHeight -0.01
-  speed 0.01
+  speed 0.05
 }
 ConveyorBelt {
   translation 1 0.04 -2
@@ -109,7 +109,7 @@ ConveyorBelt {
   speed 0.01
 }
 Solid {
-  translation -0.522533014069387 0.03749589242329423 8.010783070878878e-13
+  translation 2.23747 0.147496 -2.68
   rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
   scale 0.75 0.75 0.75
   children [
@@ -124,6 +124,30 @@ Solid {
       }
     }
   ]
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 2.01747 0.147496 -2.36
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(6)"
   boundingObject Box {
     size 0.1 0.1 0.1
   }
