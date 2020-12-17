@@ -15,8 +15,10 @@ TIME_STEP = 64;
 % get and enable devices, e.g.:
 %  camera = wb_robot_get_device('camera');
 %  wb_camera_enable(camera, TIME_STEP);
-motor_left = wb_robot_get_device('motor_left');
-motor_right = wb_robot_get_device('motor_right');
+motor_left1 = wb_robot_get_device('motor_left1');
+motor_right1 = wb_robot_get_device('motor_right1');
+motor_left1 = wb_robot_get_device('motor_left1');
+motor_right1 = wb_robot_get_device('motor_right1');
 
 ds = wb_robot_get_device('dist_sensor');
 

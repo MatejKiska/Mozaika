@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.8502191337915869 -0.48857085298648595 -0.1960253711812362 5.635151120291085
-  position 2.732633897361242 4.171614935808914 4.723678028170651
+  orientation -0.8738471271239553 0.44043298741370024 0.2059368398685711 0.7755969521972826
+  position 3.4161966162664603 5.504052234844208 5.012286760777083
 }
 TexturedBackground {
 }
@@ -18,119 +18,11 @@ RectangleArena {
   floorAppearance Asphalt {
   }
 }
-TinkerbotsBase {
-  translation 1.01 0.028 0.31
-  rotation 0 1 0 0
-  name "car1(9)"
-  controller "car1_controller"
-  upSlot TinkerbotsMotor {
-    rotation 0 0 1 1.57
-    name "motor_left"
-    upASlot TinkerbotsCubieFemaleCube {
-      name "female cube cubie(1)"
-      upSlot TinkerbotsCubieFemaleCube {
-        frontSlot TinkerbotsCubieFemaleCube {
-          backSlot TinkerbotsCubieFemaleCube {
-            upSlot TinkerbotsCubieTriangle {
-            }
-          }
-        }
-      }
-    }
-    upBSlot TinkerbotsCubieFemaleCube {
-      name "female cube cubie(2)"
-      upSlot TinkerbotsCubieFemaleCube {
-      }
-    }
-    upCSlot TinkerbotsCubieFemaleCube {
-      name "female cube cubie(3)"
-      upSlot TinkerbotsCubieFemaleCube {
-      }
-    }
-    upDSlot TinkerbotsCubieFemaleCube {
-      upSlot TinkerbotsCubieFemaleCube {
-        leftSlot TinkerbotsCubieFemaleCube {
-          rightSlot TinkerbotsCubieFemaleCube {
-            upSlot TinkerbotsCubieTriangle {
-              rotation 0 0 1 -1.57
-            }
-          }
-        }
-      }
-    }
-    backSlot TinkerbotsAxle {
-      endSlot TinkerbotsWheel {
-      }
-    }
-  }
-  downCSlot TinkerbotsCubieBoxWithRoundSlots {
-    axisSlot TinkerbotsAxle {
-      translation 0 0 0.005
-      rotation 1 0 0 3.14
-      endSlot TinkerbotsWheel {
-      }
-    }
-  }
-  rightSlot TinkerbotsCube {
-    leftSlot TinkerbotsMotor {
-      rotation 0 0 1 1.57
-      name "motor_right"
-      upASlot TinkerbotsCubieFemaleCube {
-        name "female cube cubie(1)"
-        upSlot TinkerbotsCubieFemaleCube {
-        }
-      }
-      upBSlot TinkerbotsCubieFemaleCube {
-        name "female cube cubie(2)"
-        upSlot TinkerbotsCubieFemaleCube {
-          leftSlot TinkerbotsCubieFemaleCube {
-            rightSlot TinkerbotsCubieFemaleCube {
-              upSlot TinkerbotsCubieTriangle {
-                rotation 0 0 1 -1.57
-              }
-            }
-          }
-        }
-      }
-      upCSlot TinkerbotsCubieFemaleCube {
-        name "female cube cubie(3)"
-        upSlot TinkerbotsCubieFemaleCube {
-          frontSlot TinkerbotsCubieFemaleCube {
-            backSlot TinkerbotsCubieFemaleCube {
-              upSlot TinkerbotsCubieTriangle {
-              }
-            }
-          }
-        }
-      }
-      upDSlot TinkerbotsCubieFemaleCube {
-        upSlot TinkerbotsCubieFemaleCube {
-        }
-      }
-      leftSlot TinkerbotsDistanceSensor {
-        rotation 0 0 1 1.5707996938995747
-        name "dist_sensor"
-      }
-      frontSlot TinkerbotsAxle {
-        endSlot TinkerbotsWheel {
-        }
-      }
-    }
-    rightDSlot TinkerbotsCubieBoxWithRoundSlots {
-      axisSlot TinkerbotsAxle {
-        translation 0 0 0.005
-        rotation 1 0 0 3.14
-        endSlot TinkerbotsWheel {
-        }
-      }
-    }
-  }
-}
 ConveyorBelt {
-  translation 1 0.04 -2
-  rotation 0 1 0 4.692820414042842e-06
-  name "conveyor belt(7)"
-  size 2 0.05 0.1
+  translation 1.33 0.04 -2.69
+  rotation 1 0 0 4.692820414042842e-06
+  name "conveyor belt1"
+  size 2 0.06 0.1
   borderThickness 0.01
   borderHeight -0.01
   speed 0.01
@@ -138,17 +30,17 @@ ConveyorBelt {
 ConveyorBelt {
   translation 1.17 0.04 -2.36
   rotation 1 0 0 4.692820414042842e-06
-  name "conveyor belt(8)"
+  name "conveyor belt2"
   size 2 0.05 0.1
   borderThickness 0.01
   borderHeight -0.01
   speed 0.01
 }
 ConveyorBelt {
-  translation 1.33 0.04 -2.69
-  rotation 1 0 0 4.692820414042842e-06
-  name "conveyor belt(5)"
-  size 2 0.06 0.1
+  translation 1 0.04 -2
+  rotation 0 1 0 4.692820414042842e-06
+  name "conveyor belt3"
+  size 2 0.05 0.1
   borderThickness 0.01
   borderHeight -0.01
   speed 0.01
@@ -156,14 +48,69 @@ ConveyorBelt {
 ConveyorBelt {
   translation 0.84 0.04 -1.65
   rotation 1 0 0 4.692820414042842e-06
-  name "conveyor belt(4)"
+  name "conveyor belt4"
+  size 2 0.05 0.1
+  borderThickness 0.01
+  borderHeight -0.01
+  speed 0.01
+}
+ConveyorBelt {
+  translation 0.68 0.04 -1.29
+  rotation 1 0 0 4.692820414042842e-06
+  name "conveyor belt5"
+  size 2 0.05 0.1
+  borderThickness 0.01
+  borderHeight -0.01
+  speed 0.01
+}
+ConveyorBelt {
+  translation 0.52 0.04 -0.93
+  rotation 1 0 0 4.692820414042842e-06
+  name "conveyor belt6"
+  size 2 0.05 0.1
+  borderThickness 0.01
+  borderHeight -0.01
+  speed 0.01
+}
+ConveyorBelt {
+  translation 0.36 0.04 -0.57
+  rotation 1 0 0 4.692820414042842e-06
+  name "conveyor belt7"
+  size 2 0.05 0.1
+  borderThickness 0.01
+  borderHeight -0.01
+  speed 0.01
+}
+ConveyorBelt {
+  translation 0.2 0.05 -0.18
+  rotation 1 0 0 4.692820414042842e-06
+  name "conveyor belt8"
+  size 2 0.05 0.1
+  borderThickness 0.01
+  borderHeight -0.01
+  speed 0.01
+}
+ConveyorBelt {
+  translation 0.05 0.05 0.17
+  rotation 1 0 0 4.692820414042842e-06
+  name "conveyor belt9"
+  size 2 0.05 0.1
+  borderThickness 0.01
+  borderHeight -0.01
+  speed 0.01
+}
+ConveyorBelt {
+  translation -0.1 0.05 0.52
+  rotation 1 0 0 4.692820414042842e-06
+  name "conveyor belt10"
   size 2 0.05 0.1
   borderThickness 0.01
   borderHeight -0.01
   speed 0.01
 }
 Solid {
-  translation -0.56 0.11 0
+  translation -0.522533014069387 0.03749589242329423 8.010783070878878e-13
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
   scale 0.75 0.75 0.75
   children [
     Shape {
@@ -185,7 +132,8 @@ Solid {
   }
 }
 Solid {
-  translation -0.76 0.11 0
+  translation -0.7600005900038451 0.037494778016883355 -1.5001191087838703e-17
+  rotation -3.7383512536087815e-11 6.418132589063969e-11 1 4.6930275876815956e-06
   scale 0.75 0.75 0.75
   children [
     Shape {
@@ -208,7 +156,8 @@ Solid {
   }
 }
 Solid {
-  translation -0.96 0.11 0
+  translation -0.9600005899994406 0.037493839452800555 2.933772849015243e-17
+  rotation 8.972105354354566e-12 9.394215164566671e-12 -1 -4.693027587723701e-06
   scale 0.75 0.75 0.75
   children [
     Shape {
@@ -231,7 +180,8 @@ Solid {
   }
 }
 Solid {
-  translation -1.16 0.11 0
+  translation -1.1600005899950372 0.03749290088871776 4.625913734251724e-17
+  rotation -2.5420798246546942e-11 6.908243480807538e-11 -1 -4.693027587709672e-06
   scale 0.75 0.75 0.75
   children [
     Shape {
@@ -254,7 +204,8 @@ Solid {
   }
 }
 Solid {
-  translation -1.36 0.11 0
+  translation -1.3600005899906322 0.03749196232463497 3.774943828469955e-17
+  rotation -2.542087524427845e-11 3.547628057070841e-11 -0.9999999999999999 -4.693027587688623e-06
   scale 0.75 0.75 0.75
   children [
     Shape {
@@ -276,61 +227,9 @@ Solid {
     density 10
   }
 }
-ConveyorBelt {
-  translation 0.2 0.05 -0.18
-  rotation 1 0 0 4.692820414042842e-06
-  size 2 0.05 0.1
-  borderThickness 0.01
-  borderHeight -0.01
-  speed 0.01
-}
-ConveyorBelt {
-  translation 0.05 0.05 0.17
-  rotation 1 0 0 4.692820414042842e-06
-  name "conveyor belt(6)"
-  size 2 0.05 0.1
-  borderThickness 0.01
-  borderHeight -0.01
-  speed 0.01
-}
-ConveyorBelt {
-  translation -0.1 0.05 0.52
-  rotation 1 0 0 4.692820414042842e-06
-  name "conveyor belt(9)"
-  size 2 0.05 0.1
-  borderThickness 0.01
-  borderHeight -0.01
-  speed 0.01
-}
-ConveyorBelt {
-  translation 0.36 0.04 -0.57
-  rotation 1 0 0 4.692820414042842e-06
-  name "conveyor belt(1)"
-  size 2 0.05 0.1
-  borderThickness 0.01
-  borderHeight -0.01
-  speed 0.01
-}
-ConveyorBelt {
-  translation 0.52 0.04 -0.93
-  rotation 1 0 0 4.692820414042842e-06
-  name "conveyor belt(2)"
-  size 2 0.05 0.1
-  borderThickness 0.01
-  borderHeight -0.01
-  speed 0.01
-}
-ConveyorBelt {
-  translation 0.68 0.04 -1.29
-  rotation 1 0 0 4.692820414042842e-06
-  name "conveyor belt(3)"
-  size 2 0.05 0.1
-  borderThickness 0.01
-  borderHeight -0.01
-  speed 0.01
-}
 Solid {
-  translation -0.56 0.11 0
+  translation -0.5975323703063079 0.037495540436110586 8.143912611305979e-13
+  rotation 1.768582863980469e-07 0.026938858855994317 -0.9996370830874101 -1.0418862818379409e-05
   scale 0.75 0.75 0.75
   children [
     Shape {
@@ -353,115 +252,13 @@ Solid {
   }
 }
 TinkerbotsBase {
-  translation 1.31 0.028 -0.42
-  rotation 0 1 0 0
+  translation 2.439993635647482 0.026195830286199 -2.909973886522593
+  rotation -0.9712444282893845 0.00016003172821060725 -0.23808451211003293 -0.0010051968342843869
   name "car1"
   controller "car1_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
-    name "motor_left"
-    upASlot TinkerbotsCubieFemaleCube {
-      upSlot TinkerbotsCubieFemaleCube {
-        frontSlot TinkerbotsCubieFemaleCube {
-          backSlot TinkerbotsCubieFemaleCube {
-            upSlot TinkerbotsCubieTriangle {
-            }
-          }
-        }
-      }
-    }
-    upBSlot TinkerbotsCubieFemaleCube {
-      upSlot TinkerbotsCubieFemaleCube {
-      }
-    }
-    upCSlot TinkerbotsCubieFemaleCube {
-      upSlot TinkerbotsCubieFemaleCube {
-      }
-    }
-    upDSlot TinkerbotsCubieFemaleCube {
-      upSlot TinkerbotsCubieFemaleCube {
-        leftSlot TinkerbotsCubieFemaleCube {
-          rightSlot TinkerbotsCubieFemaleCube {
-            upSlot TinkerbotsCubieTriangle {
-              rotation 0 0 1 -1.57
-            }
-          }
-        }
-      }
-    }
-    backSlot TinkerbotsAxle {
-      endSlot TinkerbotsWheel {
-      }
-    }
-  }
-  downCSlot TinkerbotsCubieBoxWithRoundSlots {
-    axisSlot TinkerbotsAxle {
-      translation 0 0 0.005
-      rotation 1 0 0 3.14
-      endSlot TinkerbotsWheel {
-      }
-    }
-  }
-  rightSlot TinkerbotsCube {
-    leftSlot TinkerbotsMotor {
-      rotation 0 0 1 1.57
-      name "motor_right"
-      upASlot TinkerbotsCubieFemaleCube {
-        upSlot TinkerbotsCubieFemaleCube {
-        }
-      }
-      upBSlot TinkerbotsCubieFemaleCube {
-        upSlot TinkerbotsCubieFemaleCube {
-          leftSlot TinkerbotsCubieFemaleCube {
-            rightSlot TinkerbotsCubieFemaleCube {
-              upSlot TinkerbotsCubieTriangle {
-                rotation 0 0 1 -1.57
-              }
-            }
-          }
-        }
-      }
-      upCSlot TinkerbotsCubieFemaleCube {
-        upSlot TinkerbotsCubieFemaleCube {
-          frontSlot TinkerbotsCubieFemaleCube {
-            backSlot TinkerbotsCubieFemaleCube {
-              upSlot TinkerbotsCubieTriangle {
-              }
-            }
-          }
-        }
-      }
-      upDSlot TinkerbotsCubieFemaleCube {
-        upSlot TinkerbotsCubieFemaleCube {
-        }
-      }
-      leftSlot TinkerbotsDistanceSensor {
-        rotation 0 0 1 1.5707996938995747
-        name "dist_sensor"
-      }
-      frontSlot TinkerbotsAxle {
-        endSlot TinkerbotsWheel {
-        }
-      }
-    }
-    rightDSlot TinkerbotsCubieBoxWithRoundSlots {
-      axisSlot TinkerbotsAxle {
-        translation 0 0 0.005
-        rotation 1 0 0 3.14
-        endSlot TinkerbotsWheel {
-        }
-      }
-    }
-  }
-}
-TinkerbotsBase {
-  translation 1.16 0.028 -0.05
-  rotation 0 1 0 0
-  name "car1(8)"
-  controller "car1_controller"
-  upSlot TinkerbotsMotor {
-    rotation 0 0 1 1.57
-    name "motor_left"
+    name "motor_left1"
     upASlot TinkerbotsCubieFemaleCube {
       name "female cube cubie(1)"
       upSlot TinkerbotsCubieFemaleCube {
@@ -510,7 +307,7 @@ TinkerbotsBase {
   rightSlot TinkerbotsCube {
     leftSlot TinkerbotsMotor {
       rotation 0 0 1 1.57
-      name "motor_right"
+      name "motor_right1"
       upASlot TinkerbotsCubieFemaleCube {
         name "female cube cubie(1)"
         upSlot TinkerbotsCubieFemaleCube {
@@ -545,7 +342,7 @@ TinkerbotsBase {
       }
       leftSlot TinkerbotsDistanceSensor {
         rotation 0 0 1 1.5707996938995747
-        name "dist_sensor"
+        name "dist_sensor1"
       }
       frontSlot TinkerbotsAxle {
         endSlot TinkerbotsWheel {
@@ -563,13 +360,13 @@ TinkerbotsBase {
   }
 }
 TinkerbotsBase {
-  translation 2.28 0.029 -2.57
-  rotation 0 1 0 0
-  name "car1(3)"
+  translation 2.2799936829915124 0.026196119283570192 -2.5699741085487484
+  rotation -0.971249061160226 0.0001562894937938145 -0.23806561441958274 -0.001005275329091109
+  name "car2"
   controller "car1_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
-    name "motor_left"
+    name "motor_left2"
     upASlot TinkerbotsCubieFemaleCube {
       name "female cube cubie(1)"
       upSlot TinkerbotsCubieFemaleCube {
@@ -618,7 +415,7 @@ TinkerbotsBase {
   rightSlot TinkerbotsCube {
     leftSlot TinkerbotsMotor {
       rotation 0 0 1 1.57
-      name "motor_right"
+      name "motor_right2"
       upASlot TinkerbotsCubieFemaleCube {
         name "female cube cubie(1)"
         upSlot TinkerbotsCubieFemaleCube {
@@ -653,7 +450,7 @@ TinkerbotsBase {
       }
       leftSlot TinkerbotsDistanceSensor {
         rotation 0 0 1 1.5707996938995747
-        name "dist_sensor"
+        name "dist_sensor2"
       }
       frontSlot TinkerbotsAxle {
         endSlot TinkerbotsWheel {
@@ -671,13 +468,13 @@ TinkerbotsBase {
   }
 }
 TinkerbotsBase {
-  translation 2.11 0.029 -2.22
-  rotation 0 1 0 0
-  name "car1(4)"
+  translation 2.1099936829952552 0.02619532150409981 -2.219974108548743
+  rotation -0.9712490611603886 0.00015628949310197003 -0.23806561441892057 -0.0010052753290913613
+  name "car3"
   controller "car1_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
-    name "motor_left"
+    name "motor_left3"
     upASlot TinkerbotsCubieFemaleCube {
       name "female cube cubie(1)"
       upSlot TinkerbotsCubieFemaleCube {
@@ -726,7 +523,7 @@ TinkerbotsBase {
   rightSlot TinkerbotsCube {
     leftSlot TinkerbotsMotor {
       rotation 0 0 1 1.57
-      name "motor_right"
+      name "motor_right3"
       upASlot TinkerbotsCubieFemaleCube {
         name "female cube cubie(1)"
         upSlot TinkerbotsCubieFemaleCube {
@@ -761,7 +558,7 @@ TinkerbotsBase {
       }
       leftSlot TinkerbotsDistanceSensor {
         rotation 0 0 1 1.5707996938995747
-        name "dist_sensor"
+        name "dist_sensor3"
       }
       frontSlot TinkerbotsAxle {
         endSlot TinkerbotsWheel {
@@ -779,13 +576,13 @@ TinkerbotsBase {
   }
 }
 TinkerbotsBase {
-  translation 1.95 0.029 -1.87
-  rotation 0 1 0 0
-  name "car1(5)"
+  translation 1.9499936829987807 0.026194570652833572 -1.8699741085487376
+  rotation -0.971249061160328 0.00015628952323090846 -0.23806561441914725 -0.0010052753290915998
+  name "car4"
   controller "car1_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
-    name "motor_left"
+    name "motor_left4"
     upASlot TinkerbotsCubieFemaleCube {
       name "female cube cubie(1)"
       upSlot TinkerbotsCubieFemaleCube {
@@ -834,7 +631,7 @@ TinkerbotsBase {
   rightSlot TinkerbotsCube {
     leftSlot TinkerbotsMotor {
       rotation 0 0 1 1.57
-      name "motor_right"
+      name "motor_right4"
       upASlot TinkerbotsCubieFemaleCube {
         name "female cube cubie(1)"
         upSlot TinkerbotsCubieFemaleCube {
@@ -869,7 +666,7 @@ TinkerbotsBase {
       }
       leftSlot TinkerbotsDistanceSensor {
         rotation 0 0 1 1.5707996938995747
-        name "dist_sensor"
+        name "dist_sensor4"
       }
       frontSlot TinkerbotsAxle {
         endSlot TinkerbotsWheel {
@@ -887,13 +684,13 @@ TinkerbotsBase {
   }
 }
 TinkerbotsBase {
-  translation 1.79 0.029 -1.51
-  rotation 0 1 0 0
-  name "car1(6)"
+  translation 1.7899936830023049 0.026193819801567358 -1.5099741085487337
+  rotation -0.9712490611602741 0.00015628951609969387 -0.2380656144193722 -0.0010052753290914272
+  name "car5"
   controller "car1_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
-    name "motor_left"
+    name "motor_left5"
     upASlot TinkerbotsCubieFemaleCube {
       name "female cube cubie(1)"
       upSlot TinkerbotsCubieFemaleCube {
@@ -942,7 +739,7 @@ TinkerbotsBase {
   rightSlot TinkerbotsCube {
     leftSlot TinkerbotsMotor {
       rotation 0 0 1 1.57
-      name "motor_right"
+      name "motor_right5"
       upASlot TinkerbotsCubieFemaleCube {
         name "female cube cubie(1)"
         upSlot TinkerbotsCubieFemaleCube {
@@ -977,7 +774,7 @@ TinkerbotsBase {
       }
       leftSlot TinkerbotsDistanceSensor {
         rotation 0 0 1 1.5707996938995747
-        name "dist_sensor"
+        name "dist_sensor5"
       }
       frontSlot TinkerbotsAxle {
         endSlot TinkerbotsWheel {
@@ -995,13 +792,13 @@ TinkerbotsBase {
   }
 }
 TinkerbotsBase {
-  translation 1.63 0.028 -1.15
-  rotation 0 1 0 0
-  name "car1(7)"
+  translation 1.6299936783096627 0.026193068950232573 -1.1499741084944135
+  rotation -0.971249061057714 0.00015589358812157433 -0.23806561509738894 -0.0010052753277588328
+  name "car6"
   controller "car1_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
-    name "motor_left"
+    name "motor_left6"
     upASlot TinkerbotsCubieFemaleCube {
       name "female cube cubie(1)"
       upSlot TinkerbotsCubieFemaleCube {
@@ -1050,7 +847,7 @@ TinkerbotsBase {
   rightSlot TinkerbotsCube {
     leftSlot TinkerbotsMotor {
       rotation 0 0 1 1.57
-      name "motor_right"
+      name "motor_right6"
       upASlot TinkerbotsCubieFemaleCube {
         name "female cube cubie(1)"
         upSlot TinkerbotsCubieFemaleCube {
@@ -1085,7 +882,7 @@ TinkerbotsBase {
       }
       leftSlot TinkerbotsDistanceSensor {
         rotation 0 0 1 1.5707996938995747
-        name "dist_sensor"
+        name "dist_sensor6"
       }
       frontSlot TinkerbotsAxle {
         endSlot TinkerbotsWheel {
@@ -1103,13 +900,13 @@ TinkerbotsBase {
   }
 }
 TinkerbotsBase {
-  translation 1.47 0.029 -0.79
-  rotation 0 1 0 0
-  name "car1(1)"
+  translation 1.4699936830093516 0.026192318099034884 -0.7899741085487274
+  rotation -0.9712490611602949 0.00015628951153541163 -0.2380656144192911 -0.0010052753290913838
+  name "car7"
   controller "car1_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
-    name "motor_left"
+    name "motor_left7"
     upASlot TinkerbotsCubieFemaleCube {
       name "female cube cubie(1)"
       upSlot TinkerbotsCubieFemaleCube {
@@ -1158,7 +955,7 @@ TinkerbotsBase {
   rightSlot TinkerbotsCube {
     leftSlot TinkerbotsMotor {
       rotation 0 0 1 1.57
-      name "motor_right"
+      name "motor_right7"
       upASlot TinkerbotsCubieFemaleCube {
         name "female cube cubie(1)"
         upSlot TinkerbotsCubieFemaleCube {
@@ -1193,7 +990,7 @@ TinkerbotsBase {
       }
       leftSlot TinkerbotsDistanceSensor {
         rotation 0 0 1 1.5707996938995747
-        name "dist_sensor"
+        name "dist_sensor7"
       }
       frontSlot TinkerbotsAxle {
         endSlot TinkerbotsWheel {
@@ -1211,13 +1008,13 @@ TinkerbotsBase {
   }
 }
 TinkerbotsBase {
-  translation 2.44 0.029 -2.91
-  rotation 0 1 0 0
-  name "car1(2)"
+  translation 1.3099936783167097 0.026191567247700085 -0.41997410849441014
+  rotation -0.9712490610578131 0.0001558935857453476 -0.23806561509698573 -0.0010052753277595215
+  name "car8"
   controller "car1_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
-    name "motor_left"
+    name "motor_left8"
     upASlot TinkerbotsCubieFemaleCube {
       name "female cube cubie(1)"
       upSlot TinkerbotsCubieFemaleCube {
@@ -1266,7 +1063,7 @@ TinkerbotsBase {
   rightSlot TinkerbotsCube {
     leftSlot TinkerbotsMotor {
       rotation 0 0 1 1.57
-      name "motor_right"
+      name "motor_right8"
       upASlot TinkerbotsCubieFemaleCube {
         name "female cube cubie(1)"
         upSlot TinkerbotsCubieFemaleCube {
@@ -1301,7 +1098,223 @@ TinkerbotsBase {
       }
       leftSlot TinkerbotsDistanceSensor {
         rotation 0 0 1 1.5707996938995747
-        name "dist_sensor"
+        name "dist_sensor8"
+      }
+      frontSlot TinkerbotsAxle {
+        endSlot TinkerbotsWheel {
+        }
+      }
+    }
+    rightDSlot TinkerbotsCubieBoxWithRoundSlots {
+      axisSlot TinkerbotsAxle {
+        translation 0 0 0.005
+        rotation 1 0 0 3.14
+        endSlot TinkerbotsWheel {
+        }
+      }
+    }
+  }
+}
+TinkerbotsBase {
+  translation 1.1599936783200127 0.026190863324638006 -0.04997410849440824
+  rotation -0.9712490610577122 0.00015589359429719966 -0.2380656150973917 -0.0010052753277589412
+  name "car9"
+  controller "car1_controller"
+  upSlot TinkerbotsMotor {
+    rotation 0 0 1 1.57
+    name "motor_left9"
+    upASlot TinkerbotsCubieFemaleCube {
+      name "female cube cubie(1)"
+      upSlot TinkerbotsCubieFemaleCube {
+        frontSlot TinkerbotsCubieFemaleCube {
+          backSlot TinkerbotsCubieFemaleCube {
+            upSlot TinkerbotsCubieTriangle {
+            }
+          }
+        }
+      }
+    }
+    upBSlot TinkerbotsCubieFemaleCube {
+      name "female cube cubie(2)"
+      upSlot TinkerbotsCubieFemaleCube {
+      }
+    }
+    upCSlot TinkerbotsCubieFemaleCube {
+      name "female cube cubie(3)"
+      upSlot TinkerbotsCubieFemaleCube {
+      }
+    }
+    upDSlot TinkerbotsCubieFemaleCube {
+      upSlot TinkerbotsCubieFemaleCube {
+        leftSlot TinkerbotsCubieFemaleCube {
+          rightSlot TinkerbotsCubieFemaleCube {
+            upSlot TinkerbotsCubieTriangle {
+              rotation 0 0 1 -1.57
+            }
+          }
+        }
+      }
+    }
+    backSlot TinkerbotsAxle {
+      endSlot TinkerbotsWheel {
+      }
+    }
+  }
+  downCSlot TinkerbotsCubieBoxWithRoundSlots {
+    axisSlot TinkerbotsAxle {
+      translation 0 0 0.005
+      rotation 1 0 0 3.14
+      endSlot TinkerbotsWheel {
+      }
+    }
+  }
+  rightSlot TinkerbotsCube {
+    leftSlot TinkerbotsMotor {
+      rotation 0 0 1 1.57
+      name "motor_right9"
+      upASlot TinkerbotsCubieFemaleCube {
+        name "female cube cubie(1)"
+        upSlot TinkerbotsCubieFemaleCube {
+        }
+      }
+      upBSlot TinkerbotsCubieFemaleCube {
+        name "female cube cubie(2)"
+        upSlot TinkerbotsCubieFemaleCube {
+          leftSlot TinkerbotsCubieFemaleCube {
+            rightSlot TinkerbotsCubieFemaleCube {
+              upSlot TinkerbotsCubieTriangle {
+                rotation 0 0 1 -1.57
+              }
+            }
+          }
+        }
+      }
+      upCSlot TinkerbotsCubieFemaleCube {
+        name "female cube cubie(3)"
+        upSlot TinkerbotsCubieFemaleCube {
+          frontSlot TinkerbotsCubieFemaleCube {
+            backSlot TinkerbotsCubieFemaleCube {
+              upSlot TinkerbotsCubieTriangle {
+              }
+            }
+          }
+        }
+      }
+      upDSlot TinkerbotsCubieFemaleCube {
+        upSlot TinkerbotsCubieFemaleCube {
+        }
+      }
+      leftSlot TinkerbotsDistanceSensor {
+        rotation 0 0 1 1.5707996938995747
+        name "dist_sensor9"
+      }
+      frontSlot TinkerbotsAxle {
+        endSlot TinkerbotsWheel {
+        }
+      }
+    }
+    rightDSlot TinkerbotsCubieBoxWithRoundSlots {
+      axisSlot TinkerbotsAxle {
+        translation 0 0 0.005
+        rotation 1 0 0 3.14
+        endSlot TinkerbotsWheel {
+        }
+      }
+    }
+  }
+}
+TinkerbotsBase {
+  translation 1.0099936783233154 0.026190159401575867 0.31002589150559356
+  rotation -0.9712490610578348 0.00015589358897584582 -0.23806561509689572 -0.0010052753277601054
+  name "car10"
+  controller "car1_controller"
+  upSlot TinkerbotsMotor {
+    rotation 0 0 1 1.57
+    name "motor_left10"
+    upASlot TinkerbotsCubieFemaleCube {
+      name "female cube cubie(1)"
+      upSlot TinkerbotsCubieFemaleCube {
+        frontSlot TinkerbotsCubieFemaleCube {
+          backSlot TinkerbotsCubieFemaleCube {
+            upSlot TinkerbotsCubieTriangle {
+            }
+          }
+        }
+      }
+    }
+    upBSlot TinkerbotsCubieFemaleCube {
+      name "female cube cubie(2)"
+      upSlot TinkerbotsCubieFemaleCube {
+      }
+    }
+    upCSlot TinkerbotsCubieFemaleCube {
+      name "female cube cubie(3)"
+      upSlot TinkerbotsCubieFemaleCube {
+      }
+    }
+    upDSlot TinkerbotsCubieFemaleCube {
+      upSlot TinkerbotsCubieFemaleCube {
+        leftSlot TinkerbotsCubieFemaleCube {
+          rightSlot TinkerbotsCubieFemaleCube {
+            upSlot TinkerbotsCubieTriangle {
+              rotation 0 0 1 -1.57
+            }
+          }
+        }
+      }
+    }
+    backSlot TinkerbotsAxle {
+      endSlot TinkerbotsWheel {
+      }
+    }
+  }
+  downCSlot TinkerbotsCubieBoxWithRoundSlots {
+    axisSlot TinkerbotsAxle {
+      translation 0 0 0.005
+      rotation 1 0 0 3.14
+      endSlot TinkerbotsWheel {
+      }
+    }
+  }
+  rightSlot TinkerbotsCube {
+    leftSlot TinkerbotsMotor {
+      rotation 0 0 1 1.57
+      name "motor_right10"
+      upASlot TinkerbotsCubieFemaleCube {
+        name "female cube cubie(1)"
+        upSlot TinkerbotsCubieFemaleCube {
+        }
+      }
+      upBSlot TinkerbotsCubieFemaleCube {
+        name "female cube cubie(2)"
+        upSlot TinkerbotsCubieFemaleCube {
+          leftSlot TinkerbotsCubieFemaleCube {
+            rightSlot TinkerbotsCubieFemaleCube {
+              upSlot TinkerbotsCubieTriangle {
+                rotation 0 0 1 -1.57
+              }
+            }
+          }
+        }
+      }
+      upCSlot TinkerbotsCubieFemaleCube {
+        name "female cube cubie(3)"
+        upSlot TinkerbotsCubieFemaleCube {
+          frontSlot TinkerbotsCubieFemaleCube {
+            backSlot TinkerbotsCubieFemaleCube {
+              upSlot TinkerbotsCubieTriangle {
+              }
+            }
+          }
+        }
+      }
+      upDSlot TinkerbotsCubieFemaleCube {
+        upSlot TinkerbotsCubieFemaleCube {
+        }
+      }
+      leftSlot TinkerbotsDistanceSensor {
+        rotation 0 0 1 1.5707996938995747
+        name "dist_sensor10"
       }
       frontSlot TinkerbotsAxle {
         endSlot TinkerbotsWheel {
