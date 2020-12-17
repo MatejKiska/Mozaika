@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.08431367126165965 0.9783427132306581 0.18904163643720032 3.9324790666872413
-  position -2.285846114044088 1.3143245246817594 -2.1499147608215714
+  orientation 0.46322023422869124 -0.7945270599166122 -0.3926242041206588 4.738653863579659
+  position 0.5966074537968022 1.0642580200352592 0.17505024805255207
 }
 TexturedBackground {
 }
@@ -14,9 +14,8 @@ RectangleArena {
   floorSize 15 4
 }
 Solid {
-  translation 0.10505748589878657 0.1246076603622175 -0.14560370885336218
-  rotation 9.246781327488634e-12 1 -2.8028787872685694e-10 -0.056199746832128784
-  scale 2.5 2.5 2.5
+  translation -0.47 0.015 0.05
+  scale 0.3 0.3 0.3
   children [
     Shape {
       appearance Appearance {
@@ -33,11 +32,46 @@ Solid {
     size 0.1 0.1 0.1
   }
   physics Physics {
+    density 100
   }
-  linearVelocity 2.3177009726038577e-17 -4.7273679848556335e-07 -8.170252946563627e-17
-  angularVelocity -1.5987211554602268e-15 6.091655220325703e-16 -1.065814103640148e-15
 }
 TinkerbotsBase {
-  translation -0.4482324475240712 0.020474463979766294 -0.07416411398822444
-  rotation -5.154762524176095e-07 0.9999999997051704 2.4277430094037938e-05 -0.042782087816827186
+  translation -0.44823246880000955 0.020474497945358272 -0.0741641148955669
+  rotation -2.004983817490295e-15 1 2.1306824293430736e-14 -0.04278208780421779
+  name "car1"
+  controller "car1_controller"
+  upSlot TinkerbotsMotor {
+    rotation 0 0 1 1.57
+    name "motor_left"
+    backSlot TinkerbotsAxle {
+      endSlot TinkerbotsWheel {
+      }
+    }
+  }
+  downCSlot TinkerbotsCubieBoxWithRoundSlots {
+    axisSlot TinkerbotsAxle {
+      translation 0 0 0.005
+      rotation 1 0 0 3.14
+      endSlot TinkerbotsWheel {
+      }
+    }
+  }
+  rightSlot TinkerbotsCube {
+    leftSlot TinkerbotsMotor {
+      rotation 0 0 1 1.57
+      name "motor_right"
+      frontSlot TinkerbotsAxle {
+        endSlot TinkerbotsWheel {
+        }
+      }
+    }
+    rightDSlot TinkerbotsCubieBoxWithRoundSlots {
+      axisSlot TinkerbotsAxle {
+        translation 0 0 0.005
+        rotation 1 0 0 3.14
+        endSlot TinkerbotsWheel {
+        }
+      }
+    }
+  }
 }
