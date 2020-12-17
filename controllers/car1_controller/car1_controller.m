@@ -20,11 +20,6 @@ motor_right = wb_robot_get_device('motor_right');
 
 ds = wb_robot_get_device('dist_sensor');
 
-wb_motor_set_position(motor_left,Inf);
-wb_motor_set_velocity(motor_left,0);
-wb_motor_set_position(motor_right,Inf);
-wb_motor_set_velocity(motor_right,0);
-
 wb_distance_sensor_enable(ds,TIME_STEP);
 
 % main loop:
@@ -32,9 +27,13 @@ wb_distance_sensor_enable(ds,TIME_STEP);
 % and leave the loop when Webots signals the termination
 %
 while wb_robot_step(TIME_STEP) ~= -1
-
   distance = wb_distance_sensor_get_value(ds);
-  disp(distance);
+  if distance < 128
+    wb_motor_set_position(motor_left,15);
+    wb_motor_set_velocity(motor_left,2);
+    wb_motor_set_position(motor_right,15);
+    wb_motor_set_velocity(motor_right,2);
+  end
   % Process here sensor data, images, etc.
 
   % send actuator commands, e.g.:
