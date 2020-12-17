@@ -76,13 +76,18 @@ wb_position_sensor_enable(left_motor_sensor1,TIME_STEP);
 %
 while wb_robot_step(TIME_STEP) ~= -1
   distance1 = wb_distance_sensor_get_value(ds1);
-  if distance1 < 128
-    wb_motor_set_position(motor_left1,15);
-    wb_motor_set_velocity(motor_left1,2);
-    wb_motor_set_position(motor_right1,15);
-    wb_motor_set_velocity(motor_right1,2);
+  if wb_position_sensor_get_value(left_motor_sensor1) < 15
+    if distance1 < 128
+      wb_motor_set_position(motor_left1,Inf);
+      wb_motor_set_velocity(motor_left1,2);
+      wb_motor_set_position(motor_right1,Inf);
+      wb_motor_set_velocity(motor_right1,2);
+    end
+  else
+    wb_motor_set_position(motor_left1,0);
+    wb_motor_set_position(motor_right1,0);
   end
-  disp(wb_position_sensor_get_value(left_motor_sensor1));
+  
   
   distance2 = wb_distance_sensor_get_value(ds2);
   if distance2 < 128
