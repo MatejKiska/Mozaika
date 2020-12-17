@@ -26,6 +26,8 @@ wb_distance_sensor_enable(ds1,TIME_STEP);
 % perform simulation steps of TIME_STEP milliseconds
 % and leave the loop when Webots signals the termination
 %
+i = 0;
+
 while wb_robot_step(TIME_STEP) ~= -1
   distance1 = wb_distance_sensor_get_value(ds1);
   disp(distance1);
@@ -41,6 +43,7 @@ while wb_robot_step(TIME_STEP) ~= -1
     wb_motor_set_position(motor_right1,0);
     
     wb_robot_step(10000);
+    i = i + 1;
   end
   % Process here sensor data, images, etc.
 
