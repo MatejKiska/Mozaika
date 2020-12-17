@@ -3,24 +3,26 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.46322023422869124 -0.7945270599166122 -0.3926242041206588 4.738653863579659
-  position 0.5966074537968022 1.0642580200352592 0.17505024805255207
+  orientation -0.2243685014260293 0.8991010489387349 0.3758671033292282 2.0632103248308495
+  position 0.9102017298511125 1.2613924235630678 -0.4982172074464606
 }
 TexturedBackground {
 }
 TexturedBackgroundLight {
+  texture "noon_park_empty"
 }
 RectangleArena {
-  floorSize 15 4
+  translation 0 0 -0.01
+  floorSize 4 4
 }
 Solid {
-  translation -0.47 0.015 0.05
-  scale 0.3 0.3 0.3
+  translation -0.56 0.11 0
+  scale 0.75 0.75 0.75
   children [
     Shape {
       appearance Appearance {
         material Material {
-          diffuseColor 0.5 0.5 0.5
+          diffuseColor 1 1 1
         }
       }
       geometry Box {
@@ -32,17 +34,146 @@ Solid {
     size 0.1 0.1 0.1
   }
   physics Physics {
-    density 100
+    density 10
   }
 }
+Solid {
+  translation -0.76 0.11 0
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.96 0.11 0
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -1.16 0.11 0
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(5)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -1.36 0.11 0
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+ConveyorBelt {
+  translation -1 0.05 2.34644e-07
+  rotation 1 0 0 4.692820414042842e-06
+  size 1 0.02 0.1
+  borderThickness 0.01
+  borderHeight -0.01
+  speed 0.01
+}
 TinkerbotsBase {
-  translation -0.44823246880000955 0.020474497945358272 -0.0741641148955669
-  rotation -2.004983817490295e-15 1 2.1306824293430736e-14 -0.04278208780421779
+  translation -0.36 0.028 -0.21
+  rotation 0 1 0 0
   name "car1"
   controller "car1_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
     name "motor_left"
+    upASlot TinkerbotsCubieFemaleCube {
+      upSlot TinkerbotsCubieFemaleCube {
+        frontSlot TinkerbotsCubieFemaleCube {
+          backSlot TinkerbotsCubieFemaleCube {
+            upSlot TinkerbotsCubieTriangle {
+            }
+          }
+        }
+      }
+    }
+    upBSlot TinkerbotsCubieFemaleCube {
+      upSlot TinkerbotsCubieFemaleCube {
+      }
+    }
+    upCSlot TinkerbotsCubieFemaleCube {
+      upSlot TinkerbotsCubieFemaleCube {
+      }
+    }
+    upDSlot TinkerbotsCubieFemaleCube {
+      upSlot TinkerbotsCubieFemaleCube {
+        leftSlot TinkerbotsCubieFemaleCube {
+          rightSlot TinkerbotsCubieFemaleCube {
+            upSlot TinkerbotsCubieTriangle {
+              rotation 0 0 1 -1.57
+            }
+          }
+        }
+      }
+    }
     backSlot TinkerbotsAxle {
       endSlot TinkerbotsWheel {
       }
@@ -60,6 +191,39 @@ TinkerbotsBase {
     leftSlot TinkerbotsMotor {
       rotation 0 0 1 1.57
       name "motor_right"
+      upASlot TinkerbotsCubieFemaleCube {
+        upSlot TinkerbotsCubieFemaleCube {
+        }
+      }
+      upBSlot TinkerbotsCubieFemaleCube {
+        upSlot TinkerbotsCubieFemaleCube {
+          leftSlot TinkerbotsCubieFemaleCube {
+            rightSlot TinkerbotsCubieFemaleCube {
+              upSlot TinkerbotsCubieTriangle {
+                rotation 0 0 1 -1.57
+              }
+            }
+          }
+        }
+      }
+      upCSlot TinkerbotsCubieFemaleCube {
+        upSlot TinkerbotsCubieFemaleCube {
+          frontSlot TinkerbotsCubieFemaleCube {
+            backSlot TinkerbotsCubieFemaleCube {
+              upSlot TinkerbotsCubieTriangle {
+              }
+            }
+          }
+        }
+      }
+      upDSlot TinkerbotsCubieFemaleCube {
+        upSlot TinkerbotsCubieFemaleCube {
+        }
+      }
+      leftSlot TinkerbotsDistanceSensor {
+        rotation 0 0 1 1.5707996938995747
+        name "dist_sensor"
+      }
       frontSlot TinkerbotsAxle {
         endSlot TinkerbotsWheel {
         }

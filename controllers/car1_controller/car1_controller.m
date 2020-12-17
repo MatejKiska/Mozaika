@@ -18,12 +18,14 @@ TIME_STEP = 64;
 motor_left = wb_robot_get_device('motor_left');
 motor_right = wb_robot_get_device('motor_right');
 
-ds = wb_robot_get_device('car1');
+ds = wb_robot_get_device('dist_sensor');
 
 wb_motor_set_position(motor_left,Inf);
-wb_motor_set_velocity(motor_left,1);
+wb_motor_set_velocity(motor_left,0);
 wb_motor_set_position(motor_right,Inf);
-wb_motor_set_velocity(motor_right,1);
+wb_motor_set_velocity(motor_right,0);
+
+wb_distance_sensor_enable(ds,TIME_STEP);
 
 % main loop:
 % perform simulation steps of TIME_STEP milliseconds
@@ -31,9 +33,8 @@ wb_motor_set_velocity(motor_right,1);
 %
 while wb_robot_step(TIME_STEP) ~= -1
 
-  % read the sensors, e.g.:
-  %  rgb = wb_camera_get_image(camera);
-
+  distance = wb_distance_sensor_get_value(ds);
+  disp(distance);
   % Process here sensor data, images, etc.
 
   % send actuator commands, e.g.:
