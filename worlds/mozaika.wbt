@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.5242232668335521 -0.8479783434088904 -0.07824765568291787 0.6034820479565856
-  position -0.28547393150456163 1.7396958309604635 2.4693284466765246
+  orientation 0.9877255297472297 0.14378040775220693 0.061036646632686264 5.079142183074672
+  position 0.35863121305677853 11.433063449237622 4.520907005753927
 }
 TexturedBackground {
 }
@@ -17,6 +17,15 @@ RectangleArena {
   floorSize 5 6
   floorAppearance Asphalt {
   }
+}
+ConveyorBelt {
+  translation -0.1 0.05 0.53
+  rotation 1 0 0 4.692820414042842e-06
+  name "conveyor belt8(2)"
+  size 2 0.05 0.1
+  borderThickness 0.01
+  borderHeight -0.01
+  speed 0.001
 }
 Solid {
   translation 0.48 0.147496 -2.68
@@ -229,7 +238,7 @@ ConveyorBelt {
   size 2 0.05 0.1
   borderThickness 0.01
   borderHeight -0.01
-  speed 0.01
+  speed 0.001
 }
 ConveyorBelt {
   translation 0.52 0.04 -0.93
@@ -238,7 +247,31 @@ ConveyorBelt {
   size 2 0.05 0.1
   borderThickness 0.01
   borderHeight -0.01
-  speed 0.01
+  speed 0.001
+}
+Solid {
+  translation -0.64 0.14 -0.18
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(84)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
 }
 ConveyorBelt {
   translation 0.36 0.04 -0.57
@@ -247,7 +280,7 @@ ConveyorBelt {
   size 2 0.05 0.1
   borderThickness 0.01
   borderHeight -0.01
-  speed 0.01
+  speed 0.001
 }
 ConveyorBelt {
   translation 0.2 0.05 -0.18
@@ -256,25 +289,16 @@ ConveyorBelt {
   size 2 0.05 0.1
   borderThickness 0.01
   borderHeight -0.01
-  speed 0.01
+  speed 0.001
 }
 ConveyorBelt {
   translation 0.05 0.05 0.17
   rotation 1 0 0 4.692820414042842e-06
-  name "conveyor belt9"
+  name "conveyor belt8(1)"
   size 2 0.05 0.1
   borderThickness 0.01
   borderHeight -0.01
-  speed 0.01
-}
-ConveyorBelt {
-  translation -0.1 0.05 0.52
-  rotation 1 0 0 4.692820414042842e-06
-  name "conveyor belt10"
-  size 2 0.05 0.1
-  borderThickness 0.01
-  borderHeight -0.01
-  speed 0.01
+  speed 0.001
 }
 Solid {
   translation 2.28 0.147496 -2.68
@@ -828,6 +852,1374 @@ Solid {
   }
 }
 Solid {
+  translation 1.24 0.14 -1.29
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(47)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 1.04 0.14 -1.29
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(48)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.84 0.14 -1.29
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(49)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.64 0.14 -1.29
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(50)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.44 0.14 -1.29
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(51)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.24 0.14 -1.29
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(52)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.04 0.14 -1.29
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(53)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.16 0.14 -1.29
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(54)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 1.48 0.14 -0.93
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(55)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 1.32 0.14 -0.57
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(65)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 1.16 0.14 -0.18
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(75)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 1.01 0.14 0.17
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.81 0.14 0.17
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.61 0.14 0.17
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.41 0.14 0.17
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.21 0.14 0.17
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(5)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.01 0.14 0.17
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(85)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.19 0.14 0.17
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(86)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.39 0.14 0.17
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(87)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.59 0.14 0.17
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(88)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.79 0.14 0.17
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(89)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.85 0.14 0.53
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(90)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.65 0.14 0.53
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(91)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.45 0.14 0.53
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(92)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.25 0.14 0.53
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(93)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.05 0.14 0.53
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(94)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.15 0.14 0.53
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(95)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.35 0.14 0.53
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(96)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.55 0.14 0.53
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(97)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.75 0.14 0.53
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(98)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.95 0.14 0.53
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(99)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.96 0.14 -0.18
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(76)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.76 0.14 -0.18
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(77)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.56 0.14 -0.18
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(78)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.36 0.14 -0.18
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(79)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.16 0.14 -0.18
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(80)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.04 0.14 -0.18
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(81)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.24 0.14 -0.18
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(82)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.44 0.14 -0.18
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(83)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 1.12 0.14 -0.57
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(66)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.92 0.14 -0.57
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(67)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.72 0.14 -0.57
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(68)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.52 0.14 -0.57
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(69)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.32 0.14 -0.57
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(70)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.12 0.14 -0.57
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(71)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.08 0.14 -0.57
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(72)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.28 0.14 -0.57
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(73)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.48 0.14 -0.57
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(74)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 1.28 0.14 -0.93
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(56)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 1.08 0.14 -0.93
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(57)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.88 0.14 -0.93
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(58)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.68 0.14 -0.93
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(59)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.48 0.14 -0.93
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(60)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.28 0.14 -0.93
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(61)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.08 0.14 -0.93
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(62)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.12 0.14 -0.93
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(63)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.32 0.14 -0.93
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(64)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
   translation 1.44 0.14 -1.29
   rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
   scale 0.75 0.75 0.75
@@ -1060,126 +2452,6 @@ Solid {
     }
   ]
   name "solid(34)"
-  boundingObject Box {
-    size 0.1 0.1 0.1
-  }
-  physics Physics {
-    density 10
-  }
-}
-Solid {
-  translation -0.7600005900038451 0.037494778016883355 -1.5001191087838703e-17
-  rotation -3.7383512536087815e-11 6.418132589063969e-11 1 4.6930275876815956e-06
-  scale 0.75 0.75 0.75
-  children [
-    Shape {
-      appearance Appearance {
-        material Material {
-          diffuseColor 1 1 1
-        }
-      }
-      geometry Box {
-        size 0.1 0.1 0.1
-      }
-    }
-  ]
-  name "solid(2)"
-  boundingObject Box {
-    size 0.1 0.1 0.1
-  }
-  physics Physics {
-    density 10
-  }
-}
-Solid {
-  translation -0.9600005899994406 0.037493839452800555 2.933772849015243e-17
-  rotation 8.972105354354566e-12 9.394215164566671e-12 -1 -4.693027587723701e-06
-  scale 0.75 0.75 0.75
-  children [
-    Shape {
-      appearance Appearance {
-        material Material {
-          diffuseColor 1 1 1
-        }
-      }
-      geometry Box {
-        size 0.1 0.1 0.1
-      }
-    }
-  ]
-  name "solid(4)"
-  boundingObject Box {
-    size 0.1 0.1 0.1
-  }
-  physics Physics {
-    density 10
-  }
-}
-Solid {
-  translation -1.1600005899950372 0.03749290088871776 4.625913734251724e-17
-  rotation -2.5420798246546942e-11 6.908243480807538e-11 -1 -4.693027587709672e-06
-  scale 0.75 0.75 0.75
-  children [
-    Shape {
-      appearance Appearance {
-        material Material {
-          diffuseColor 1 1 1
-        }
-      }
-      geometry Box {
-        size 0.1 0.1 0.1
-      }
-    }
-  ]
-  name "solid(5)"
-  boundingObject Box {
-    size 0.1 0.1 0.1
-  }
-  physics Physics {
-    density 10
-  }
-}
-Solid {
-  translation -1.3600005899906322 0.03749196232463497 3.774943828469955e-17
-  rotation -2.542087524427845e-11 3.547628057070841e-11 -0.9999999999999999 -4.693027587688623e-06
-  scale 0.75 0.75 0.75
-  children [
-    Shape {
-      appearance Appearance {
-        material Material {
-          diffuseColor 1 1 1
-        }
-      }
-      geometry Box {
-        size 0.1 0.1 0.1
-      }
-    }
-  ]
-  name "solid(1)"
-  boundingObject Box {
-    size 0.1 0.1 0.1
-  }
-  physics Physics {
-    density 10
-  }
-}
-Solid {
-  translation -0.5975323703063079 0.037495540436110586 8.143912611305979e-13
-  rotation 1.768582863980469e-07 0.026938858855994317 -0.9996370830874101 -1.0418862818379409e-05
-  scale 0.75 0.75 0.75
-  children [
-    Shape {
-      appearance Appearance {
-        material Material {
-          diffuseColor 1 1 1
-        }
-      }
-      geometry Box {
-        size 0.1 0.1 0.1
-      }
-    }
-  ]
-  name "solid(3)"
   boundingObject Box {
     size 0.1 0.1 0.1
   }
