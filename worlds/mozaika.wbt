@@ -1,10 +1,10 @@
-#VRML_SIM R2021a utf8
+#VRML_SIM R2020b utf8
 WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.5242232668335521 -0.8479783434088904 -0.07824765568291787 0.6034820479565856
-  position -0.28547393150456163 1.7396958309604635 2.4693284466765246
+  orientation -0.8313701854381149 0.503933704000384 0.234252933251748 0.8463880750560706
+  position 3.1246857067965097 4.007635953985776 2.9131589460659684
 }
 TexturedBackground {
 }
@@ -1299,7 +1299,7 @@ TinkerbotsBase {
   translation 2.2799936829915124 0.026196119283570192 -2.5699741085487484
   rotation -0.971249061160226 0.0001562894937938145 -0.23806561441958274 -0.001005275329091109
   name "car2"
-  controller "car1_controller"
+  controller "car2_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
     name "motor_left2"
@@ -1407,7 +1407,7 @@ TinkerbotsBase {
   translation 2.1099936829952552 0.02619532150409981 -2.219974108548743
   rotation -0.9712490611603886 0.00015628949310197003 -0.23806561441892057 -0.0010052753290913613
   name "car3"
-  controller "car1_controller"
+  controller "car3_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
     name "motor_left3"
@@ -1515,7 +1515,7 @@ TinkerbotsBase {
   translation 1.9499936829987807 0.026194570652833572 -1.8699741085487376
   rotation -0.971249061160328 0.00015628952323090846 -0.23806561441914725 -0.0010052753290915998
   name "car4"
-  controller "car1_controller"
+  controller "car4_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
     name "motor_left4"
@@ -1623,7 +1623,7 @@ TinkerbotsBase {
   translation 1.7899936830023049 0.026193819801567358 -1.5099741085487337
   rotation -0.9712490611602741 0.00015628951609969387 -0.2380656144193722 -0.0010052753290914272
   name "car5"
-  controller "car1_controller"
+  controller "car5_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
     name "motor_left5"
@@ -1731,7 +1731,7 @@ TinkerbotsBase {
   translation 1.6299936783096627 0.026193068950232573 -1.1499741084944135
   rotation -0.971249061057714 0.00015589358812157433 -0.23806561509738894 -0.0010052753277588328
   name "car6"
-  controller "car1_controller"
+  controller "car6_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
     name "motor_left6"
@@ -1839,7 +1839,7 @@ TinkerbotsBase {
   translation 1.4699936830093516 0.026192318099034884 -0.7899741085487274
   rotation -0.9712490611602949 0.00015628951153541163 -0.2380656144192911 -0.0010052753290913838
   name "car7"
-  controller "car1_controller"
+  controller "car7_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
     name "motor_left7"
@@ -1947,7 +1947,7 @@ TinkerbotsBase {
   translation 1.3099936783167097 0.026191567247700085 -0.41997410849441014
   rotation -0.9712490610578131 0.0001558935857453476 -0.23806561509698573 -0.0010052753277595215
   name "car8"
-  controller "car1_controller"
+  controller "car8_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
     name "motor_left8"
@@ -2055,7 +2055,7 @@ TinkerbotsBase {
   translation 1.1599936783200127 0.026190863324638006 -0.04997410849440824
   rotation -0.9712490610577122 0.00015589359429719966 -0.2380656150973917 -0.0010052753277589412
   name "car9"
-  controller "car1_controller"
+  controller "car9_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
     name "motor_left9"
@@ -2211,7 +2211,7 @@ TinkerbotsBase {
   translation 1.0099936783233154 0.026190159401575867 0.31002589150559356
   rotation -0.9712490610578348 0.00015589358897584582 -0.23806561509689572 -0.0010052753277601054
   name "car10"
-  controller "car1_controller"
+  controller "car10_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
     name "motor_left10"
