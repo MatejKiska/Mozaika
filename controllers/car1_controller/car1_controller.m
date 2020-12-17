@@ -17,13 +17,10 @@ TIME_STEP = 64;
 %  wb_camera_enable(camera, TIME_STEP);
 motor_left1 = wb_robot_get_device('motor_left1');
 motor_right1 = wb_robot_get_device('motor_right1');
-left_motor_sensor1 = wb_robot_get_device('motor_left1 sensor')
 
 ds1 = wb_robot_get_device('dist_sensor1');
 
 wb_distance_sensor_enable(ds1,TIME_STEP);
-
-wb_position_sensor_enable(left_motor_sensor1,TIME_STEP);
 
 % main loop:
 % perform simulation steps of TIME_STEP milliseconds
