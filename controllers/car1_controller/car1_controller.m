@@ -17,6 +17,7 @@ TIME_STEP = 64;
 %  wb_camera_enable(camera, TIME_STEP);
 motor_left1 = wb_robot_get_device('motor_left1');
 motor_right1 = wb_robot_get_device('motor_right1');
+left_motor_sensor1 = wb_robot_get_device('motor_left1 sensor')
 
 motor_left2 = wb_robot_get_device('motor_left2');
 motor_right2 = wb_robot_get_device('motor_right2');
@@ -67,6 +68,8 @@ wb_distance_sensor_enable(ds8,TIME_STEP);
 wb_distance_sensor_enable(ds9,TIME_STEP);
 wb_distance_sensor_enable(ds10,TIME_STEP);
 
+wb_position_sensor_enable(left_motor_sensor1,TIME_STEP);
+
 % main loop:
 % perform simulation steps of TIME_STEP milliseconds
 % and leave the loop when Webots signals the termination
@@ -79,6 +82,8 @@ while wb_robot_step(TIME_STEP) ~= -1
     wb_motor_set_position(motor_right1,15);
     wb_motor_set_velocity(motor_right1,2);
   end
+  disp(wb_position_sensor_get_value(left_motor_sensor1));
+  
   distance2 = wb_distance_sensor_get_value(ds2);
   if distance2 < 128
     wb_motor_set_position(motor_left2,15);
