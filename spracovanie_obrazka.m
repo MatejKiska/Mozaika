@@ -2,10 +2,10 @@ clc, clear
 
 input = imread('input.png');
 
-
 img_resized_rgb = imresize(input,[10 10]);
 
-img_resized_vector = im2bw(img_resized_rgb,0.4);
+source = 1 - imbinarize(img_resized_rgb,0.4);
 
+index = 1;
 
-imshow(img_resized_vector)
+output = char("motor_left"+num2str(index))

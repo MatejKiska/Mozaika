@@ -1,5 +1,5 @@
 % MATLAB controller for Webots
-% File:          car6_controller.m
+% File:          car1_controller.m
 % Date:
 % Description:
 % Author:
@@ -12,20 +12,66 @@
 
 TIME_STEP = 64;
 
+diff_x = 0.16;
+
+meter = 38;
+
+diff_y = 0.34;
+
+margin = 1;
+
+index = 6;
+
+speed = 5;
+
+input = imread('input.png');
+
+img_resized_rgb = imresize(input,[10 10]);
+
+source = 1 - imbinarize(img_resized_rgb,0.4);
+
+dist = zeros(sum(source(:,index,1)),1);
+
+y = 1;
+
+for x = 1:size(source,1)
+  if source(x,index,1) == 1
+    dist(y,1) = (diff_x*(10-x)+margin+diff_y*(10-index))*meter;
+    y = y + 1;
+  end
+end
+
 % get and enable devices, e.g.:
 %  camera = wb_robot_get_device('camera');
 %  wb_camera_enable(camera, TIME_STEP);
-%  motor = wb_robot_get_device('motor');
+motor_left = wb_robot_get_device('motor_left6');
+motor_right = wb_robot_get_device('motor_right6');
+
+ds = wb_robot_get_device('dist_sensor6');
+
+wb_distance_sensor_enable(ds,TIME_STEP);
 
 % main loop:
 % perform simulation steps of TIME_STEP milliseconds
 % and leave the loop when Webots signals the termination
 %
+
+i = 0;
 while wb_robot_step(TIME_STEP) ~= -1
-
-  % read the sensors, e.g.:
-  %  rgb = wb_camera_get_image(camera);
-
+  distance = wb_distance_sensor_get_value(ds); 
+  if distance < 128 && i < size(dist,1)
+    length = dist(i+1,1);
+    timer = 1000*length/speed;
+    wb_motor_set_position(motor_left,length);
+    wb_motor_set_velocity(motor_left,speed);
+    wb_motor_set_position(motor_right,length);
+    wb_motor_set_velocity(motor_right,speed);
+    wb_robot_step(timer);
+    wb_motor_set_position(motor_left,0);
+    wb_motor_set_position(motor_right,0);
+    wb_robot_step(timer);
+    i = i + 1;
+  end
   % Process here sensor data, images, etc.
 
   % send actuator commands, e.g.:
