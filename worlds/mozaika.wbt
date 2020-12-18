@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.7161197682255389 0.6305312159256281 0.29933737371058383 1.0445081930250057
-  position 4.717219098539596 5.7016045592883255 3.2437354075881633
+  orientation -0.0380466432185318 -0.9774703086668571 -0.20761562709613396 2.949760517442116
+  position 0.5966145960730143 1.687996718170624 -4.980804748452167
 }
 TexturedBackground {
 }
@@ -14,21 +14,30 @@ TexturedBackgroundLight {
 RectangleArena {
   translation 0 0 -0.01
   rotation 0 0 1 4.692820414042842e-06
-  floorSize 5 6
+  floorSize 5.1 7
   floorAppearance Asphalt {
   }
 }
 ConveyorBelt {
-  translation -0.1 0.05 0.53
+  translation -0.13 0.025 0.54
   rotation 1 0 0 4.692820414042842e-06
   name "conveyor belt8(2)"
   size 2 0.05 0.1
   borderThickness 0.01
   borderHeight -0.01
-  speed 0.001
+  speed 0.0013
+}
+ConveyorBelt {
+  translation 1.33 0.025 -3.07
+  rotation 1 0 0 4.692820414042842e-06
+  name "conveyor belt1"
+  size 2 0.05 0.1
+  borderThickness 0.01
+  borderHeight -0.01
+  speed 0.013
 }
 Solid {
-  translation 0.48 0.147496 -2.68
+  translation 0.92 0.117496 -2.68
   rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
   scale 0.75 0.75 0.75
   children [
@@ -43,7 +52,7 @@ Solid {
       }
     }
   ]
-  name "solid(14)"
+  name "solid(7)"
   boundingObject Box {
     size 0.1 0.1 0.1
   }
@@ -51,17 +60,32 @@ Solid {
     density 10
   }
 }
-ConveyorBelt {
-  translation 1.33 0.06 -2.69
-  rotation 1 0 0 4.692820414042842e-06
-  name "conveyor belt1"
-  size 1.8 0.06 0.1
-  borderThickness 0.01
-  borderHeight -0.01
-  speed 0.01
+Solid {
+  translation 2.11 0.117496 -2.68
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(8)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
 }
 Solid {
-  translation 1.28 0.167496 -2.68
+  translation 0.44 0.117496 -3.07
   rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
   scale 0.75 0.75 0.75
   children [
@@ -84,50 +108,170 @@ Solid {
     density 10
   }
 }
-ConveyorBelt {
-  translation 1.17 0.04 -2.36
-  rotation 1 0 0 4.692820414042842e-06
-  name "conveyor belt2"
-  size 1.85 0.05 0.1
-  borderThickness 0.01
-  borderHeight -0.01
-  speed 0.01
+Solid {
+  translation 1 0.117496 -3.07
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(12)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 2.24 0.117496 -3.07
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(13)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 1.67 0.117496 -3.07
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(14)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.26 0.117496 -2.68
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(9)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 1.52 0.117496 -2.68
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(10)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
 }
 ConveyorBelt {
-  translation 1 0.04 -2
+  translation 1.17 0.025 -2.68
+  rotation 1 0 0 4.692820414042842e-06
+  name "conveyor belt2"
+  size 2 0.05 0.1
+  borderThickness 0.01
+  borderHeight -0.01
+  speed 0.013
+}
+ConveyorBelt {
+  translation 0.97 0.025 -2.27
   rotation 0 1 0 4.692820414042842e-06
   name "conveyor belt3"
   size 2 0.05 0.1
   borderThickness 0.01
   borderHeight -0.01
-  speed 0.001
+  speed 0.0013
 }
 ConveyorBelt {
-  translation 0.84 0.04 -1.65
+  translation 0.81 0.025 -1.87
   rotation 1 0 0 4.692820414042842e-06
   name "conveyor belt4"
   size 2 0.05 0.1
   borderThickness 0.01
   borderHeight -0.01
-  speed 0.001
+  speed 0.0013
 }
 ConveyorBelt {
-  translation 0.68 0.04 -1.29
+  translation 0.65 0.025 -1.47
   rotation 1 0 0 4.692820414042842e-06
   name "conveyor belt5"
   size 2 0.05 0.1
   borderThickness 0.01
   borderHeight -0.01
-  speed 0.001
+  speed 0.0013
 }
 ConveyorBelt {
-  translation 0.52 0.04 -0.93
+  translation 0.49 0.025 -1.07
   rotation 1 0 0 4.692820414042842e-06
   name "conveyor belt6"
   size 2 0.05 0.1
   borderThickness 0.01
   borderHeight -0.01
-  speed 0.001
+  speed 0.0013
 }
 Solid {
   translation -0.64 0.14 -0.18
@@ -154,57 +298,34 @@ Solid {
   }
 }
 ConveyorBelt {
-  translation 0.36 0.04 -0.57
+  translation 0.33 0.025 -0.67
   rotation 1 0 0 4.692820414042842e-06
   name "conveyor belt7"
   size 2 0.05 0.1
   borderThickness 0.01
   borderHeight -0.01
-  speed 0.001
+  speed 0.0013
 }
 ConveyorBelt {
-  translation 0.2 0.05 -0.18
+  translation 0.17 0.025 -0.26
   rotation 1 0 0 4.692820414042842e-06
   name "conveyor belt8"
   size 2 0.05 0.1
   borderThickness 0.01
   borderHeight -0.01
-  speed 0.001
+  speed 0.0013
 }
 ConveyorBelt {
-  translation 0.05 0.05 0.17
+  translation 0.02 0.025 0.13
   rotation 1 0 0 4.692820414042842e-06
   name "conveyor belt8(1)"
   size 2 0.05 0.1
   borderThickness 0.01
   borderHeight -0.01
-  speed 0.001
+  speed 0.0013
 }
 Solid {
-  translation 2.16 0.167496 -2.68
-  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
-  scale 0.75 0.75 0.75
-  children [
-    Shape {
-      appearance Appearance {
-        material Material {
-          diffuseColor 1 1 1
-        }
-      }
-      geometry Box {
-        size 0.1 0.1 0.1
-      }
-    }
-  ]
-  boundingObject Box {
-    size 0.1 0.1 0.1
-  }
-  physics Physics {
-    density 10
-  }
-}
-Solid {
-  translation 1.99 0.147496 -2.36
+  translation 1.44 0.117496 -2.27
   rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
   scale 0.75 0.75 0.75
   children [
@@ -228,7 +349,7 @@ Solid {
   }
 }
 Solid {
-  translation 1.12 0.147496 -2.36
+  translation 0.51 0.117496 -2.27
   rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
   scale 0.75 0.75 0.75
   children [
@@ -243,7 +364,7 @@ Solid {
       }
     }
   ]
-  name "solid(20)"
+  name "solid(15)"
   boundingObject Box {
     size 0.1 0.1 0.1
   }
@@ -252,7 +373,7 @@ Solid {
   }
 }
 Solid {
-  translation 0.32 0.147496 -2.36
+  translation 1.87 0.117496 -2.27
   rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
   scale 0.75 0.75 0.75
   children [
@@ -267,7 +388,7 @@ Solid {
       }
     }
   ]
-  name "solid(24)"
+  name "solid(16)"
   boundingObject Box {
     size 0.1 0.1 0.1
   }
@@ -276,7 +397,7 @@ Solid {
   }
 }
 Solid {
-  translation 1.96 0.14 -1.99
+  translation 0.94 0.117496 -2.27
   rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
   scale 0.75 0.75 0.75
   children [
@@ -291,7 +412,31 @@ Solid {
       }
     }
   ]
-  name "solid(25)"
+  name "solid(17)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.05 0.117496 -2.27
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(18)"
   boundingObject Box {
     size 0.1 0.1 0.1
   }
@@ -1956,7 +2101,7 @@ Solid {
   }
 }
 Solid {
-  translation 1.76 0.14 -1.99
+  translation 1.73 0.12 -1.86
   rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
   scale 0.75 0.75 0.75
   children [
@@ -1980,55 +2125,7 @@ Solid {
   }
 }
 Solid {
-  translation 1.56 0.14 -1.99
-  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
-  scale 0.75 0.75 0.75
-  children [
-    Shape {
-      appearance Appearance {
-        material Material {
-          diffuseColor 1 1 1
-        }
-      }
-      geometry Box {
-        size 0.1 0.1 0.1
-      }
-    }
-  ]
-  name "solid(27)"
-  boundingObject Box {
-    size 0.1 0.1 0.1
-  }
-  physics Physics {
-    density 10
-  }
-}
-Solid {
-  translation 1.36 0.14 -1.99
-  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
-  scale 0.75 0.75 0.75
-  children [
-    Shape {
-      appearance Appearance {
-        material Material {
-          diffuseColor 1 1 1
-        }
-      }
-      geometry Box {
-        size 0.1 0.1 0.1
-      }
-    }
-  ]
-  name "solid(28)"
-  boundingObject Box {
-    size 0.1 0.1 0.1
-  }
-  physics Physics {
-    density 10
-  }
-}
-Solid {
-  translation 1.16 0.14 -1.99
+  translation 1.16 0.12 -1.86
   rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
   scale 0.75 0.75 0.75
   children [
@@ -2052,55 +2149,7 @@ Solid {
   }
 }
 Solid {
-  translation 0.96 0.14 -1.99
-  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
-  scale 0.75 0.75 0.75
-  children [
-    Shape {
-      appearance Appearance {
-        material Material {
-          diffuseColor 1 1 1
-        }
-      }
-      geometry Box {
-        size 0.1 0.1 0.1
-      }
-    }
-  ]
-  name "solid(30)"
-  boundingObject Box {
-    size 0.1 0.1 0.1
-  }
-  physics Physics {
-    density 10
-  }
-}
-Solid {
-  translation 0.76 0.14 -1.99
-  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
-  scale 0.75 0.75 0.75
-  children [
-    Shape {
-      appearance Appearance {
-        material Material {
-          diffuseColor 1 1 1
-        }
-      }
-      geometry Box {
-        size 0.1 0.1 0.1
-      }
-    }
-  ]
-  name "solid(31)"
-  boundingObject Box {
-    size 0.1 0.1 0.1
-  }
-  physics Physics {
-    density 10
-  }
-}
-Solid {
-  translation 0.56 0.14 -1.99
+  translation 0.56 0.12 -1.87
   rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
   scale 0.75 0.75 0.75
   children [
@@ -2124,31 +2173,7 @@ Solid {
   }
 }
 Solid {
-  translation 0.36 0.14 -1.99
-  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
-  scale 0.75 0.75 0.75
-  children [
-    Shape {
-      appearance Appearance {
-        material Material {
-          diffuseColor 1 1 1
-        }
-      }
-      geometry Box {
-        size 0.1 0.1 0.1
-      }
-    }
-  ]
-  name "solid(33)"
-  boundingObject Box {
-    size 0.1 0.1 0.1
-  }
-  physics Physics {
-    density 10
-  }
-}
-Solid {
-  translation 0.16 0.14 -1.99
+  translation -0.05 0.12 -1.87
   rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
   scale 0.75 0.75 0.75
   children [
@@ -2172,8 +2197,8 @@ Solid {
   }
 }
 TinkerbotsBase {
-  translation 2.439993635647482 0.026195830286199 -2.909973886522593
-  rotation -0.9712444282893845 0.00016003172821060725 -0.23808451211003293 -0.0010051968342843869
+  translation 2.46999 0.0265483 -3.28
+  rotation 1 0 0 0
   name "car1"
   controller "car1_controller"
   upSlot TinkerbotsMotor {
@@ -2280,8 +2305,8 @@ TinkerbotsBase {
   }
 }
 TinkerbotsBase {
-  translation 2.2799936829915124 0.026196119283570192 -2.5699741085487484
-  rotation -0.971249061160226 0.0001562894937938145 -0.23806561441958274 -0.001005275329091109
+  translation 2.30999 0.0265097 -2.88
+  rotation 1 0 0 0
   name "car2"
   controller "car2_controller"
   upSlot TinkerbotsMotor {
@@ -2388,8 +2413,8 @@ TinkerbotsBase {
   }
 }
 TinkerbotsBase {
-  translation 2.1099936829952552 0.02619532150409981 -2.219974108548743
-  rotation -0.9712490611603886 0.00015628949310197003 -0.23806561441892057 -0.0010052753290913613
+  translation 2.10999 0.0264697 -2.48
+  rotation 1 0 0 0
   name "car3"
   controller "car3_controller"
   upSlot TinkerbotsMotor {
@@ -2496,8 +2521,8 @@ TinkerbotsBase {
   }
 }
 TinkerbotsBase {
-  translation 1.9499936829987807 0.026194570652833572 -1.8699741085487376
-  rotation -0.971249061160328 0.00015628952323090846 -0.23806561441914725 -0.0010052753290915998
+  translation 1.94999 0.0264297 -2.08
+  rotation 1 0 0 0
   name "car4"
   controller "car4_controller"
   upSlot TinkerbotsMotor {
@@ -2604,8 +2629,8 @@ TinkerbotsBase {
   }
 }
 TinkerbotsBase {
-  translation 1.7899936830023049 0.026193819801567358 -1.5099741085487337
-  rotation -0.9712490611602741 0.00015628951609969387 -0.2380656144193722 -0.0010052753290914272
+  translation 1.78999 0.0263898 -1.68
+  rotation 1 0 0 0
   name "car5"
   controller "car5_controller"
   upSlot TinkerbotsMotor {
@@ -2712,8 +2737,8 @@ TinkerbotsBase {
   }
 }
 TinkerbotsBase {
-  translation 1.6299936783096627 0.026193068950232573 -1.1499741084944135
-  rotation -0.971249061057714 0.00015589358812157433 -0.23806561509738894 -0.0010052753277588328
+  translation 1.62999 0.0263498 -1.28
+  rotation 1 0 0 0
   name "car6"
   controller "car6_controller"
   upSlot TinkerbotsMotor {
@@ -2820,8 +2845,8 @@ TinkerbotsBase {
   }
 }
 TinkerbotsBase {
-  translation 1.4699936830093516 0.026192318099034884 -0.7899741085487274
-  rotation -0.9712490611602949 0.00015628951153541163 -0.2380656144192911 -0.0010052753290913838
+  translation 1.46999 0.0263197 -0.88
+  rotation 1 0 0 0
   name "car7"
   controller "car7_controller"
   upSlot TinkerbotsMotor {
@@ -2928,8 +2953,8 @@ TinkerbotsBase {
   }
 }
 TinkerbotsBase {
-  translation 1.3099936783167097 0.026191567247700085 -0.41997410849441014
-  rotation -0.9712490610578131 0.0001558935857453476 -0.23806561509698573 -0.0010052753277595215
+  translation 1.30999 0.0262601 -0.48
+  rotation 1 0 0 0
   name "car8"
   controller "car8_controller"
   upSlot TinkerbotsMotor {
@@ -3036,8 +3061,8 @@ TinkerbotsBase {
   }
 }
 TinkerbotsBase {
-  translation 1.1599936783200127 0.026190863324638006 -0.04997410849440824
-  rotation -0.9712490610577122 0.00015589359429719966 -0.2380656150973917 -0.0010052753277589412
+  translation 1.15999 0.02623 -0.08
+  rotation 1 0 0 0
   name "car9"
   controller "car9_controller"
   upSlot TinkerbotsMotor {
@@ -3144,8 +3169,8 @@ TinkerbotsBase {
   }
 }
 TinkerbotsBase {
-  translation 1.0099936783233154 0.026190159401575867 0.31002589150559356
-  rotation -0.9712490610578348 0.00015589358897584582 -0.23806561509689572 -0.0010052753277601054
+  translation 1.00999 0.0261902 0.32
+  rotation 1 0 0 0
   name "car10"
   controller "car10_controller"
   upSlot TinkerbotsMotor {

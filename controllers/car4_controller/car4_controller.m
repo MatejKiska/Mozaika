@@ -16,7 +16,7 @@ diff_x = 0.16;
 
 meter = 38;
 
-diff_y = 0.34;
+diff_y = 0.4;
 
 margin = 1;
 
