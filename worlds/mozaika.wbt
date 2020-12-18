@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.8502191337915869 -0.48857085298648595 -0.1960253711812362 5.635151120291085
-  position 2.732633897361242 4.171614935808914 4.723678028170651
+  orientation -0.8627438613229689 0.46640777319932425 0.19528650452292218 0.6717375325944082
+  position 4.127548808242307 5.458879714329834 6.32225508145703
 }
 TexturedBackground {
 }
@@ -14,156 +14,247 @@ TexturedBackgroundLight {
 RectangleArena {
   translation 0 0 -0.01
   rotation 0 0 1 4.692820414042842e-06
-  floorSize 5 6
+  floorSize 5.1 7
   floorAppearance Asphalt {
   }
 }
-TinkerbotsBase {
-  translation 1.01 0.028 0.31
-  rotation 0 1 0 0
-  name "car1(9)"
-  controller "car1_controller"
-  upSlot TinkerbotsMotor {
-    rotation 0 0 1 1.57
-    name "motor_left"
-    upASlot TinkerbotsCubieFemaleCube {
-      name "female cube cubie(1)"
-      upSlot TinkerbotsCubieFemaleCube {
-        frontSlot TinkerbotsCubieFemaleCube {
-          backSlot TinkerbotsCubieFemaleCube {
-            upSlot TinkerbotsCubieTriangle {
-            }
-          }
+ConveyorBelt {
+  translation -0.13 0.025 0.54
+  rotation 1 0 0 4.692820414042842e-06
+  name "conveyor belt8(2)"
+  size 2 0.05 0.1
+  borderThickness 0.01
+  borderHeight -0.01
+  speed 0.013
+}
+ConveyorBelt {
+  translation 1.33 0.025 -3.07
+  rotation 1 0 0 4.692820414042842e-06
+  name "conveyor belt1"
+  size 2 0.05 0.1
+  borderThickness 0.01
+  borderHeight -0.01
+  speed 0.013
+}
+Solid {
+  translation 0.92 0.117496 -2.68
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
         }
       }
-    }
-    upBSlot TinkerbotsCubieFemaleCube {
-      name "female cube cubie(2)"
-      upSlot TinkerbotsCubieFemaleCube {
+      geometry Box {
+        size 0.1 0.1 0.1
       }
     }
-    upCSlot TinkerbotsCubieFemaleCube {
-      name "female cube cubie(3)"
-      upSlot TinkerbotsCubieFemaleCube {
-      }
-    }
-    upDSlot TinkerbotsCubieFemaleCube {
-      upSlot TinkerbotsCubieFemaleCube {
-        leftSlot TinkerbotsCubieFemaleCube {
-          rightSlot TinkerbotsCubieFemaleCube {
-            upSlot TinkerbotsCubieTriangle {
-              rotation 0 0 1 -1.57
-            }
-          }
-        }
-      }
-    }
-    backSlot TinkerbotsAxle {
-      endSlot TinkerbotsWheel {
-      }
-    }
+  ]
+  name "solid(7)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
   }
-  downCSlot TinkerbotsCubieBoxWithRoundSlots {
-    axisSlot TinkerbotsAxle {
-      translation 0 0 0.005
-      rotation 1 0 0 3.14
-      endSlot TinkerbotsWheel {
-      }
-    }
+  physics Physics {
+    density 10
   }
-  rightSlot TinkerbotsCube {
-    leftSlot TinkerbotsMotor {
-      rotation 0 0 1 1.57
-      name "motor_right"
-      upASlot TinkerbotsCubieFemaleCube {
-        name "female cube cubie(1)"
-        upSlot TinkerbotsCubieFemaleCube {
+}
+Solid {
+  translation 2.11 0.117496 -2.68
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
         }
       }
-      upBSlot TinkerbotsCubieFemaleCube {
-        name "female cube cubie(2)"
-        upSlot TinkerbotsCubieFemaleCube {
-          leftSlot TinkerbotsCubieFemaleCube {
-            rightSlot TinkerbotsCubieFemaleCube {
-              upSlot TinkerbotsCubieTriangle {
-                rotation 0 0 1 -1.57
-              }
-            }
-          }
-        }
-      }
-      upCSlot TinkerbotsCubieFemaleCube {
-        name "female cube cubie(3)"
-        upSlot TinkerbotsCubieFemaleCube {
-          frontSlot TinkerbotsCubieFemaleCube {
-            backSlot TinkerbotsCubieFemaleCube {
-              upSlot TinkerbotsCubieTriangle {
-              }
-            }
-          }
-        }
-      }
-      upDSlot TinkerbotsCubieFemaleCube {
-        upSlot TinkerbotsCubieFemaleCube {
-        }
-      }
-      leftSlot TinkerbotsDistanceSensor {
-        rotation 0 0 1 1.5707996938995747
-        name "dist_sensor"
-      }
-      frontSlot TinkerbotsAxle {
-        endSlot TinkerbotsWheel {
-        }
+      geometry Box {
+        size 0.1 0.1 0.1
       }
     }
-    rightDSlot TinkerbotsCubieBoxWithRoundSlots {
-      axisSlot TinkerbotsAxle {
-        translation 0 0 0.005
-        rotation 1 0 0 3.14
-        endSlot TinkerbotsWheel {
+  ]
+  name "solid(8)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.44 0.117496 -3.07
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
         }
       }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
     }
+  ]
+  name "solid(11)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 1 0.117496 -3.07
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(12)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 2.24 0.117496 -3.07
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(13)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.26 0.117496 -2.68
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(9)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
   }
 }
 ConveyorBelt {
-  translation 1 0.04 -2
+  translation 1.17 0.025 -2.68
+  rotation 1 0 0 4.692820414042842e-06
+  name "conveyor belt2"
+  size 2 0.05 0.1
+  borderThickness 0.01
+  borderHeight -0.01
+  speed 0.013
+}
+ConveyorBelt {
+  translation 0.97 0.025 -2.27
   rotation 0 1 0 4.692820414042842e-06
-  name "conveyor belt(7)"
+  name "conveyor belt3"
   size 2 0.05 0.1
   borderThickness 0.01
   borderHeight -0.01
-  speed 0.01
+  speed 0.013
 }
 ConveyorBelt {
-  translation 1.17 0.04 -2.36
+  translation 0.81 0.025 -1.87
   rotation 1 0 0 4.692820414042842e-06
-  name "conveyor belt(8)"
+  name "conveyor belt4"
   size 2 0.05 0.1
   borderThickness 0.01
   borderHeight -0.01
-  speed 0.01
+  speed 0.013
 }
 ConveyorBelt {
-  translation 1.33 0.04 -2.69
+  translation 0.65 0.025 -1.47
   rotation 1 0 0 4.692820414042842e-06
-  name "conveyor belt(5)"
-  size 2 0.06 0.1
-  borderThickness 0.01
-  borderHeight -0.01
-  speed 0.01
-}
-ConveyorBelt {
-  translation 0.84 0.04 -1.65
-  rotation 1 0 0 4.692820414042842e-06
-  name "conveyor belt(4)"
+  name "conveyor belt5"
   size 2 0.05 0.1
   borderThickness 0.01
   borderHeight -0.01
-  speed 0.01
+  speed 0.013
+}
+ConveyorBelt {
+  translation 0.49 0.025 -1.07
+  rotation 1 0 0 4.692820414042842e-06
+  name "conveyor belt6"
+  size 2 0.05 0.1
+  borderThickness 0.01
+  borderHeight -0.01
+  speed 0.013
+}
+ConveyorBelt {
+  translation 0.33 0.025 -0.67
+  rotation 1 0 0 4.692820414042842e-06
+  name "conveyor belt7"
+  size 2 0.05 0.1
+  borderThickness 0.01
+  borderHeight -0.01
+  speed 0.013
+}
+ConveyorBelt {
+  translation 0.17 0.025 -0.26
+  rotation 1 0 0 4.692820414042842e-06
+  name "conveyor belt8"
+  size 2 0.05 0.1
+  borderThickness 0.01
+  borderHeight -0.01
+  speed 0.013
+}
+ConveyorBelt {
+  translation 0.02 0.025 0.13
+  rotation 1 0 0 4.692820414042842e-06
+  name "conveyor belt8(1)"
+  size 2 0.05 0.1
+  borderThickness 0.01
+  borderHeight -0.01
+  speed 0.013
 }
 Solid {
-  translation -0.56 0.11 0
+  translation 0.51 0.117496 -2.27
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
   scale 0.75 0.75 0.75
   children [
     Shape {
@@ -177,6 +268,7 @@ Solid {
       }
     }
   ]
+  name "solid(15)"
   boundingObject Box {
     size 0.1 0.1 0.1
   }
@@ -185,7 +277,8 @@ Solid {
   }
 }
 Solid {
-  translation -0.76 0.11 0
+  translation 1.87 0.117496 -2.27
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
   scale 0.75 0.75 0.75
   children [
     Shape {
@@ -199,7 +292,7 @@ Solid {
       }
     }
   ]
-  name "solid(2)"
+  name "solid(16)"
   boundingObject Box {
     size 0.1 0.1 0.1
   }
@@ -208,7 +301,200 @@ Solid {
   }
 }
 Solid {
-  translation -0.96 0.11 0
+  translation 0.94 0.117496 -2.27
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(17)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.05 0.117496 -2.27
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(18)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 1.58 0.12 -1.47
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(36)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.4 0.12 -1.47
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(42)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.0899999 0.12 -1.47
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(44)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.84 0.12 -1.07
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(49)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.24 0.12 -1.07
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(52)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.38 0.12 -1.07
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(54)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.41 0.12 0.14
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
   scale 0.75 0.75 0.75
   children [
     Shape {
@@ -231,30 +517,8 @@ Solid {
   }
 }
 Solid {
-  translation -1.16 0.11 0
-  scale 0.75 0.75 0.75
-  children [
-    Shape {
-      appearance Appearance {
-        material Material {
-          diffuseColor 1 1 1
-        }
-      }
-      geometry Box {
-        size 0.1 0.1 0.1
-      }
-    }
-  ]
-  name "solid(5)"
-  boundingObject Box {
-    size 0.1 0.1 0.1
-  }
-  physics Physics {
-    density 10
-  }
-}
-Solid {
-  translation -1.36 0.11 0
+  translation 0.9 0.12 0.14
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
   scale 0.75 0.75 0.75
   children [
     Shape {
@@ -276,61 +540,9 @@ Solid {
     density 10
   }
 }
-ConveyorBelt {
-  translation 0.2 0.05 -0.18
-  rotation 1 0 0 4.692820414042842e-06
-  size 2 0.05 0.1
-  borderThickness 0.01
-  borderHeight -0.01
-  speed 0.01
-}
-ConveyorBelt {
-  translation 0.05 0.05 0.17
-  rotation 1 0 0 4.692820414042842e-06
-  name "conveyor belt(6)"
-  size 2 0.05 0.1
-  borderThickness 0.01
-  borderHeight -0.01
-  speed 0.01
-}
-ConveyorBelt {
-  translation -0.1 0.05 0.52
-  rotation 1 0 0 4.692820414042842e-06
-  name "conveyor belt(9)"
-  size 2 0.05 0.1
-  borderThickness 0.01
-  borderHeight -0.01
-  speed 0.01
-}
-ConveyorBelt {
-  translation 0.36 0.04 -0.57
-  rotation 1 0 0 4.692820414042842e-06
-  name "conveyor belt(1)"
-  size 2 0.05 0.1
-  borderThickness 0.01
-  borderHeight -0.01
-  speed 0.01
-}
-ConveyorBelt {
-  translation 0.52 0.04 -0.93
-  rotation 1 0 0 4.692820414042842e-06
-  name "conveyor belt(2)"
-  size 2 0.05 0.1
-  borderThickness 0.01
-  borderHeight -0.01
-  speed 0.01
-}
-ConveyorBelt {
-  translation 0.68 0.04 -1.29
-  rotation 1 0 0 4.692820414042842e-06
-  name "conveyor belt(3)"
-  size 2 0.05 0.1
-  borderThickness 0.01
-  borderHeight -0.01
-  speed 0.01
-}
 Solid {
-  translation -0.56 0.11 0
+  translation -0.19 0.12 0.14
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
   scale 0.75 0.75 0.75
   children [
     Shape {
@@ -344,7 +556,391 @@ Solid {
       }
     }
   ]
-  name "solid(3)"
+  name "solid(86)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.79 0.12 0.14
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(89)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.65 0.12 0.55
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(91)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.05 0.12 0.55
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(94)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.55 0.12 0.54
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(97)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.95 0.12 0.54
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(99)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 1.1 0.12 -0.25
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(66)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.08 0.12 -0.26
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(72)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.69 0.12 -0.26
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(74)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 1.25 0.12 -0.67
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(56)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.65 0.12 -0.67
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(58)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.04 0.12 -0.66
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(60)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.53 0.12 -0.66
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(63)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 1.41 0.12 -1.07
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(46)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 1.73 0.12 -1.86
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(26)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation 0.56 0.12 -1.87
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(32)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 10
+  }
+}
+Solid {
+  translation -0.05 0.12 -1.87
+  rotation 6.354314724281718e-06 0.2724583911980232 -0.962167565980795 1.0702847724269798e-06
+  scale 0.75 0.75 0.75
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(34)"
   boundingObject Box {
     size 0.1 0.1 0.1
   }
@@ -353,115 +949,13 @@ Solid {
   }
 }
 TinkerbotsBase {
-  translation 1.31 0.028 -0.42
-  rotation 0 1 0 0
+  translation 2.46999 0.0265483 -3.28
+  rotation 1 0 0 0
   name "car1"
   controller "car1_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
-    name "motor_left"
-    upASlot TinkerbotsCubieFemaleCube {
-      upSlot TinkerbotsCubieFemaleCube {
-        frontSlot TinkerbotsCubieFemaleCube {
-          backSlot TinkerbotsCubieFemaleCube {
-            upSlot TinkerbotsCubieTriangle {
-            }
-          }
-        }
-      }
-    }
-    upBSlot TinkerbotsCubieFemaleCube {
-      upSlot TinkerbotsCubieFemaleCube {
-      }
-    }
-    upCSlot TinkerbotsCubieFemaleCube {
-      upSlot TinkerbotsCubieFemaleCube {
-      }
-    }
-    upDSlot TinkerbotsCubieFemaleCube {
-      upSlot TinkerbotsCubieFemaleCube {
-        leftSlot TinkerbotsCubieFemaleCube {
-          rightSlot TinkerbotsCubieFemaleCube {
-            upSlot TinkerbotsCubieTriangle {
-              rotation 0 0 1 -1.57
-            }
-          }
-        }
-      }
-    }
-    backSlot TinkerbotsAxle {
-      endSlot TinkerbotsWheel {
-      }
-    }
-  }
-  downCSlot TinkerbotsCubieBoxWithRoundSlots {
-    axisSlot TinkerbotsAxle {
-      translation 0 0 0.005
-      rotation 1 0 0 3.14
-      endSlot TinkerbotsWheel {
-      }
-    }
-  }
-  rightSlot TinkerbotsCube {
-    leftSlot TinkerbotsMotor {
-      rotation 0 0 1 1.57
-      name "motor_right"
-      upASlot TinkerbotsCubieFemaleCube {
-        upSlot TinkerbotsCubieFemaleCube {
-        }
-      }
-      upBSlot TinkerbotsCubieFemaleCube {
-        upSlot TinkerbotsCubieFemaleCube {
-          leftSlot TinkerbotsCubieFemaleCube {
-            rightSlot TinkerbotsCubieFemaleCube {
-              upSlot TinkerbotsCubieTriangle {
-                rotation 0 0 1 -1.57
-              }
-            }
-          }
-        }
-      }
-      upCSlot TinkerbotsCubieFemaleCube {
-        upSlot TinkerbotsCubieFemaleCube {
-          frontSlot TinkerbotsCubieFemaleCube {
-            backSlot TinkerbotsCubieFemaleCube {
-              upSlot TinkerbotsCubieTriangle {
-              }
-            }
-          }
-        }
-      }
-      upDSlot TinkerbotsCubieFemaleCube {
-        upSlot TinkerbotsCubieFemaleCube {
-        }
-      }
-      leftSlot TinkerbotsDistanceSensor {
-        rotation 0 0 1 1.5707996938995747
-        name "dist_sensor"
-      }
-      frontSlot TinkerbotsAxle {
-        endSlot TinkerbotsWheel {
-        }
-      }
-    }
-    rightDSlot TinkerbotsCubieBoxWithRoundSlots {
-      axisSlot TinkerbotsAxle {
-        translation 0 0 0.005
-        rotation 1 0 0 3.14
-        endSlot TinkerbotsWheel {
-        }
-      }
-    }
-  }
-}
-TinkerbotsBase {
-  translation 1.16 0.028 -0.05
-  rotation 0 1 0 0
-  name "car1(8)"
-  controller "car1_controller"
-  upSlot TinkerbotsMotor {
-    rotation 0 0 1 1.57
-    name "motor_left"
+    name "motor_left1"
     upASlot TinkerbotsCubieFemaleCube {
       name "female cube cubie(1)"
       upSlot TinkerbotsCubieFemaleCube {
@@ -510,7 +1004,7 @@ TinkerbotsBase {
   rightSlot TinkerbotsCube {
     leftSlot TinkerbotsMotor {
       rotation 0 0 1 1.57
-      name "motor_right"
+      name "motor_right1"
       upASlot TinkerbotsCubieFemaleCube {
         name "female cube cubie(1)"
         upSlot TinkerbotsCubieFemaleCube {
@@ -545,7 +1039,7 @@ TinkerbotsBase {
       }
       leftSlot TinkerbotsDistanceSensor {
         rotation 0 0 1 1.5707996938995747
-        name "dist_sensor"
+        name "dist_sensor1"
       }
       frontSlot TinkerbotsAxle {
         endSlot TinkerbotsWheel {
@@ -563,13 +1057,13 @@ TinkerbotsBase {
   }
 }
 TinkerbotsBase {
-  translation 2.28 0.029 -2.57
-  rotation 0 1 0 0
-  name "car1(3)"
-  controller "car1_controller"
+  translation 2.30999 0.0265097 -2.88
+  rotation 1 0 0 0
+  name "car2"
+  controller "car2_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
-    name "motor_left"
+    name "motor_left2"
     upASlot TinkerbotsCubieFemaleCube {
       name "female cube cubie(1)"
       upSlot TinkerbotsCubieFemaleCube {
@@ -618,7 +1112,7 @@ TinkerbotsBase {
   rightSlot TinkerbotsCube {
     leftSlot TinkerbotsMotor {
       rotation 0 0 1 1.57
-      name "motor_right"
+      name "motor_right2"
       upASlot TinkerbotsCubieFemaleCube {
         name "female cube cubie(1)"
         upSlot TinkerbotsCubieFemaleCube {
@@ -653,7 +1147,7 @@ TinkerbotsBase {
       }
       leftSlot TinkerbotsDistanceSensor {
         rotation 0 0 1 1.5707996938995747
-        name "dist_sensor"
+        name "dist_sensor2"
       }
       frontSlot TinkerbotsAxle {
         endSlot TinkerbotsWheel {
@@ -671,13 +1165,13 @@ TinkerbotsBase {
   }
 }
 TinkerbotsBase {
-  translation 2.11 0.029 -2.22
-  rotation 0 1 0 0
-  name "car1(4)"
-  controller "car1_controller"
+  translation 2.10999 0.0264697 -2.48
+  rotation 1 0 0 0
+  name "car3"
+  controller "car3_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
-    name "motor_left"
+    name "motor_left3"
     upASlot TinkerbotsCubieFemaleCube {
       name "female cube cubie(1)"
       upSlot TinkerbotsCubieFemaleCube {
@@ -726,7 +1220,7 @@ TinkerbotsBase {
   rightSlot TinkerbotsCube {
     leftSlot TinkerbotsMotor {
       rotation 0 0 1 1.57
-      name "motor_right"
+      name "motor_right3"
       upASlot TinkerbotsCubieFemaleCube {
         name "female cube cubie(1)"
         upSlot TinkerbotsCubieFemaleCube {
@@ -761,7 +1255,7 @@ TinkerbotsBase {
       }
       leftSlot TinkerbotsDistanceSensor {
         rotation 0 0 1 1.5707996938995747
-        name "dist_sensor"
+        name "dist_sensor3"
       }
       frontSlot TinkerbotsAxle {
         endSlot TinkerbotsWheel {
@@ -779,13 +1273,13 @@ TinkerbotsBase {
   }
 }
 TinkerbotsBase {
-  translation 1.95 0.029 -1.87
-  rotation 0 1 0 0
-  name "car1(5)"
-  controller "car1_controller"
+  translation 1.93999 0.0264697 -2.08
+  rotation 1 0 0 0
+  name "car4"
+  controller "car4_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
-    name "motor_left"
+    name "motor_left4"
     upASlot TinkerbotsCubieFemaleCube {
       name "female cube cubie(1)"
       upSlot TinkerbotsCubieFemaleCube {
@@ -834,7 +1328,7 @@ TinkerbotsBase {
   rightSlot TinkerbotsCube {
     leftSlot TinkerbotsMotor {
       rotation 0 0 1 1.57
-      name "motor_right"
+      name "motor_right4"
       upASlot TinkerbotsCubieFemaleCube {
         name "female cube cubie(1)"
         upSlot TinkerbotsCubieFemaleCube {
@@ -869,7 +1363,7 @@ TinkerbotsBase {
       }
       leftSlot TinkerbotsDistanceSensor {
         rotation 0 0 1 1.5707996938995747
-        name "dist_sensor"
+        name "dist_sensor4"
       }
       frontSlot TinkerbotsAxle {
         endSlot TinkerbotsWheel {
@@ -887,13 +1381,13 @@ TinkerbotsBase {
   }
 }
 TinkerbotsBase {
-  translation 1.79 0.029 -1.51
-  rotation 0 1 0 0
-  name "car1(6)"
-  controller "car1_controller"
+  translation 1.78999 0.0263898 -1.68
+  rotation 1 0 0 0
+  name "car5"
+  controller "car5_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
-    name "motor_left"
+    name "motor_left5"
     upASlot TinkerbotsCubieFemaleCube {
       name "female cube cubie(1)"
       upSlot TinkerbotsCubieFemaleCube {
@@ -942,7 +1436,7 @@ TinkerbotsBase {
   rightSlot TinkerbotsCube {
     leftSlot TinkerbotsMotor {
       rotation 0 0 1 1.57
-      name "motor_right"
+      name "motor_right5"
       upASlot TinkerbotsCubieFemaleCube {
         name "female cube cubie(1)"
         upSlot TinkerbotsCubieFemaleCube {
@@ -977,7 +1471,7 @@ TinkerbotsBase {
       }
       leftSlot TinkerbotsDistanceSensor {
         rotation 0 0 1 1.5707996938995747
-        name "dist_sensor"
+        name "dist_sensor5"
       }
       frontSlot TinkerbotsAxle {
         endSlot TinkerbotsWheel {
@@ -995,13 +1489,13 @@ TinkerbotsBase {
   }
 }
 TinkerbotsBase {
-  translation 1.63 0.028 -1.15
-  rotation 0 1 0 0
-  name "car1(7)"
-  controller "car1_controller"
+  translation 1.62999 0.0263498 -1.28
+  rotation 1 0 0 0
+  name "car6"
+  controller "car6_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
-    name "motor_left"
+    name "motor_left6"
     upASlot TinkerbotsCubieFemaleCube {
       name "female cube cubie(1)"
       upSlot TinkerbotsCubieFemaleCube {
@@ -1050,7 +1544,7 @@ TinkerbotsBase {
   rightSlot TinkerbotsCube {
     leftSlot TinkerbotsMotor {
       rotation 0 0 1 1.57
-      name "motor_right"
+      name "motor_right6"
       upASlot TinkerbotsCubieFemaleCube {
         name "female cube cubie(1)"
         upSlot TinkerbotsCubieFemaleCube {
@@ -1085,7 +1579,7 @@ TinkerbotsBase {
       }
       leftSlot TinkerbotsDistanceSensor {
         rotation 0 0 1 1.5707996938995747
-        name "dist_sensor"
+        name "dist_sensor6"
       }
       frontSlot TinkerbotsAxle {
         endSlot TinkerbotsWheel {
@@ -1103,13 +1597,13 @@ TinkerbotsBase {
   }
 }
 TinkerbotsBase {
-  translation 1.47 0.029 -0.79
-  rotation 0 1 0 0
-  name "car1(1)"
-  controller "car1_controller"
+  translation 1.46999 0.0263197 -0.88
+  rotation 1 0 0 0
+  name "car7"
+  controller "car7_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
-    name "motor_left"
+    name "motor_left7"
     upASlot TinkerbotsCubieFemaleCube {
       name "female cube cubie(1)"
       upSlot TinkerbotsCubieFemaleCube {
@@ -1158,7 +1652,7 @@ TinkerbotsBase {
   rightSlot TinkerbotsCube {
     leftSlot TinkerbotsMotor {
       rotation 0 0 1 1.57
-      name "motor_right"
+      name "motor_right7"
       upASlot TinkerbotsCubieFemaleCube {
         name "female cube cubie(1)"
         upSlot TinkerbotsCubieFemaleCube {
@@ -1193,7 +1687,7 @@ TinkerbotsBase {
       }
       leftSlot TinkerbotsDistanceSensor {
         rotation 0 0 1 1.5707996938995747
-        name "dist_sensor"
+        name "dist_sensor7"
       }
       frontSlot TinkerbotsAxle {
         endSlot TinkerbotsWheel {
@@ -1211,13 +1705,13 @@ TinkerbotsBase {
   }
 }
 TinkerbotsBase {
-  translation 2.44 0.029 -2.91
-  rotation 0 1 0 0
-  name "car1(2)"
-  controller "car1_controller"
+  translation 1.30999 0.0262601 -0.48
+  rotation 1 0 0 0
+  name "car8"
+  controller "car8_controller"
   upSlot TinkerbotsMotor {
     rotation 0 0 1 1.57
-    name "motor_left"
+    name "motor_left8"
     upASlot TinkerbotsCubieFemaleCube {
       name "female cube cubie(1)"
       upSlot TinkerbotsCubieFemaleCube {
@@ -1266,7 +1760,7 @@ TinkerbotsBase {
   rightSlot TinkerbotsCube {
     leftSlot TinkerbotsMotor {
       rotation 0 0 1 1.57
-      name "motor_right"
+      name "motor_right8"
       upASlot TinkerbotsCubieFemaleCube {
         name "female cube cubie(1)"
         upSlot TinkerbotsCubieFemaleCube {
@@ -1301,7 +1795,223 @@ TinkerbotsBase {
       }
       leftSlot TinkerbotsDistanceSensor {
         rotation 0 0 1 1.5707996938995747
-        name "dist_sensor"
+        name "dist_sensor8"
+      }
+      frontSlot TinkerbotsAxle {
+        endSlot TinkerbotsWheel {
+        }
+      }
+    }
+    rightDSlot TinkerbotsCubieBoxWithRoundSlots {
+      axisSlot TinkerbotsAxle {
+        translation 0 0 0.005
+        rotation 1 0 0 3.14
+        endSlot TinkerbotsWheel {
+        }
+      }
+    }
+  }
+}
+TinkerbotsBase {
+  translation 1.15 0.0262601 -0.08
+  rotation 1 0 0 0
+  name "car9"
+  controller "car9_controller"
+  upSlot TinkerbotsMotor {
+    rotation 0 0 1 1.57
+    name "motor_left9"
+    upASlot TinkerbotsCubieFemaleCube {
+      name "female cube cubie(1)"
+      upSlot TinkerbotsCubieFemaleCube {
+        frontSlot TinkerbotsCubieFemaleCube {
+          backSlot TinkerbotsCubieFemaleCube {
+            upSlot TinkerbotsCubieTriangle {
+            }
+          }
+        }
+      }
+    }
+    upBSlot TinkerbotsCubieFemaleCube {
+      name "female cube cubie(2)"
+      upSlot TinkerbotsCubieFemaleCube {
+      }
+    }
+    upCSlot TinkerbotsCubieFemaleCube {
+      name "female cube cubie(3)"
+      upSlot TinkerbotsCubieFemaleCube {
+      }
+    }
+    upDSlot TinkerbotsCubieFemaleCube {
+      upSlot TinkerbotsCubieFemaleCube {
+        leftSlot TinkerbotsCubieFemaleCube {
+          rightSlot TinkerbotsCubieFemaleCube {
+            upSlot TinkerbotsCubieTriangle {
+              rotation 0 0 1 -1.57
+            }
+          }
+        }
+      }
+    }
+    backSlot TinkerbotsAxle {
+      endSlot TinkerbotsWheel {
+      }
+    }
+  }
+  downCSlot TinkerbotsCubieBoxWithRoundSlots {
+    axisSlot TinkerbotsAxle {
+      translation 0 0 0.005
+      rotation 1 0 0 3.14
+      endSlot TinkerbotsWheel {
+      }
+    }
+  }
+  rightSlot TinkerbotsCube {
+    leftSlot TinkerbotsMotor {
+      rotation 0 0 1 1.57
+      name "motor_right9"
+      upASlot TinkerbotsCubieFemaleCube {
+        name "female cube cubie(1)"
+        upSlot TinkerbotsCubieFemaleCube {
+        }
+      }
+      upBSlot TinkerbotsCubieFemaleCube {
+        name "female cube cubie(2)"
+        upSlot TinkerbotsCubieFemaleCube {
+          leftSlot TinkerbotsCubieFemaleCube {
+            rightSlot TinkerbotsCubieFemaleCube {
+              upSlot TinkerbotsCubieTriangle {
+                rotation 0 0 1 -1.57
+              }
+            }
+          }
+        }
+      }
+      upCSlot TinkerbotsCubieFemaleCube {
+        name "female cube cubie(3)"
+        upSlot TinkerbotsCubieFemaleCube {
+          frontSlot TinkerbotsCubieFemaleCube {
+            backSlot TinkerbotsCubieFemaleCube {
+              upSlot TinkerbotsCubieTriangle {
+              }
+            }
+          }
+        }
+      }
+      upDSlot TinkerbotsCubieFemaleCube {
+        upSlot TinkerbotsCubieFemaleCube {
+        }
+      }
+      leftSlot TinkerbotsDistanceSensor {
+        rotation 0 0 1 1.5707996938995747
+        name "dist_sensor9"
+      }
+      frontSlot TinkerbotsAxle {
+        endSlot TinkerbotsWheel {
+        }
+      }
+    }
+    rightDSlot TinkerbotsCubieBoxWithRoundSlots {
+      axisSlot TinkerbotsAxle {
+        translation 0 0 0.005
+        rotation 1 0 0 3.14
+        endSlot TinkerbotsWheel {
+        }
+      }
+    }
+  }
+}
+TinkerbotsBase {
+  translation 0.99 0.0262601 0.32
+  rotation 1 0 0 0
+  name "car10"
+  controller "car10_controller"
+  upSlot TinkerbotsMotor {
+    rotation 0 0 1 1.57
+    name "motor_left10"
+    upASlot TinkerbotsCubieFemaleCube {
+      name "female cube cubie(1)"
+      upSlot TinkerbotsCubieFemaleCube {
+        frontSlot TinkerbotsCubieFemaleCube {
+          backSlot TinkerbotsCubieFemaleCube {
+            upSlot TinkerbotsCubieTriangle {
+            }
+          }
+        }
+      }
+    }
+    upBSlot TinkerbotsCubieFemaleCube {
+      name "female cube cubie(2)"
+      upSlot TinkerbotsCubieFemaleCube {
+      }
+    }
+    upCSlot TinkerbotsCubieFemaleCube {
+      name "female cube cubie(3)"
+      upSlot TinkerbotsCubieFemaleCube {
+      }
+    }
+    upDSlot TinkerbotsCubieFemaleCube {
+      upSlot TinkerbotsCubieFemaleCube {
+        leftSlot TinkerbotsCubieFemaleCube {
+          rightSlot TinkerbotsCubieFemaleCube {
+            upSlot TinkerbotsCubieTriangle {
+              rotation 0 0 1 -1.57
+            }
+          }
+        }
+      }
+    }
+    backSlot TinkerbotsAxle {
+      endSlot TinkerbotsWheel {
+      }
+    }
+  }
+  downCSlot TinkerbotsCubieBoxWithRoundSlots {
+    axisSlot TinkerbotsAxle {
+      translation 0 0 0.005
+      rotation 1 0 0 3.14
+      endSlot TinkerbotsWheel {
+      }
+    }
+  }
+  rightSlot TinkerbotsCube {
+    leftSlot TinkerbotsMotor {
+      rotation 0 0 1 1.57
+      name "motor_right10"
+      upASlot TinkerbotsCubieFemaleCube {
+        name "female cube cubie(1)"
+        upSlot TinkerbotsCubieFemaleCube {
+        }
+      }
+      upBSlot TinkerbotsCubieFemaleCube {
+        name "female cube cubie(2)"
+        upSlot TinkerbotsCubieFemaleCube {
+          leftSlot TinkerbotsCubieFemaleCube {
+            rightSlot TinkerbotsCubieFemaleCube {
+              upSlot TinkerbotsCubieTriangle {
+                rotation 0 0 1 -1.57
+              }
+            }
+          }
+        }
+      }
+      upCSlot TinkerbotsCubieFemaleCube {
+        name "female cube cubie(3)"
+        upSlot TinkerbotsCubieFemaleCube {
+          frontSlot TinkerbotsCubieFemaleCube {
+            backSlot TinkerbotsCubieFemaleCube {
+              upSlot TinkerbotsCubieTriangle {
+              }
+            }
+          }
+        }
+      }
+      upDSlot TinkerbotsCubieFemaleCube {
+        upSlot TinkerbotsCubieFemaleCube {
+        }
+      }
+      leftSlot TinkerbotsDistanceSensor {
+        rotation 0 0 1 1.5707996938995747
+        name "dist_sensor10"
       }
       frontSlot TinkerbotsAxle {
         endSlot TinkerbotsWheel {

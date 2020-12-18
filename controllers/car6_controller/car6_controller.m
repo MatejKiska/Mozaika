@@ -20,7 +20,7 @@ diff_y = 0.4;
 
 margin = 1;
 
-index = 1;
+index = 6;
 
 speed = 5;
 
@@ -44,10 +44,10 @@ end
 % get and enable devices, e.g.:
 %  camera = wb_robot_get_device('camera');
 %  wb_camera_enable(camera, TIME_STEP);
-motor_left = wb_robot_get_device('motor_left1');
-motor_right = wb_robot_get_device('motor_right1');
+motor_left = wb_robot_get_device('motor_left6');
+motor_right = wb_robot_get_device('motor_right6');
 
-ds = wb_robot_get_device('dist_sensor1');
+ds = wb_robot_get_device('dist_sensor6');
 
 wb_distance_sensor_enable(ds,TIME_STEP);
 
